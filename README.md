@@ -1,7 +1,6 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<!-- <title>Ee-Cs GitHub Pages</title> -->
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="icon" href="favicon.ico" />
 </head>
@@ -9,7 +8,8 @@
 <img alt="" src="images/Title.png">
 <h3>'Ee-Cs' GitHub Pages</h3>
 <ul>
-<li><a href="https://Ee-Cs.github.io/RecruitmentTaskS2/">RecruitmentTaskS2</a></li>
+<li><a href="https://Ee-Cs.github.io/RecruitmentTaskS1/">Recruitment Task S1</a></li>
+<li><a href="https://Ee-Cs.github.io/RecruitmentTaskS2/">⭐ Recruitment Task S2 ⭐</a></li>
 </ul>
 </body>
 </html>
