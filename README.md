@@ -11,6 +11,7 @@
 <ul>
 <li><a href="https://Ee-Cs.github.io/RecruitmentTaskS1/">Recruitment Task S1</a></li>
 <li><a href="https://Ee-Cs.github.io/RecruitmentTaskS2/">⭐ Recruitment Task S2 ⭐</a></li>
+<li><a href="https://Ee-Cs.github.io/RecruitmentTaskSR1/">Recruitment Task SR1</a></li>
 </ul>
 </body>
 </html>
