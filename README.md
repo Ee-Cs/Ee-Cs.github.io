@@ -1,11 +1,14 @@
-# 'Ee-Cs' GitHub Pages</h3>
-- [Recruitment Task S1](https://Ee-Cs.github.io/RecruitmentTaskS1/)
-- [Recruitment Task S2](https://Ee-Cs.github.io/RecruitmentTaskS2/)
-- [Recruitment Task SR1](https://Ee-Cs.github.io/RecruitmentTaskSR1/)
-
-- [Portfolio](https://github.com/k1729p/Portfolio)
+# ['Ee-Cs' GitHub Pages](https://Ee-Cs.github.io)</h3>
+[Portfolio](https://github.com/k1729p/Portfolio)
 
 ---
+
+<!-- This content will not appear in the rendered Markdown -->
+<a name="my-custom-anchor-point"></a>
+GitHub Docs [Basic writing and formatting syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+
+<details>
+<summary>Learning GitHub Flavored Markdown - 1st Part</summary>
 
 # A first-level heading (One Hash Line)
 ## A second-level heading (Two Hashes Line)
@@ -16,10 +19,10 @@
 1st line **bold** *italic* <sub>Subscript</sub> <sup>Superscript</sup> <ins>Underline</ins> \
 2nd line \
 3rd line
+</details>
 
-<!-- This content will not appear in the rendered Markdown -->
-<a name="my-custom-anchor-point"></a>
-GitHub Docs [Basic writing and formatting syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+<details>
+<summary>Learning GitHub Flavored Markdown - 2nd Part</summary>
 
 0️⃣1️⃣2️⃣3️⃣4️⃣5️⃣6️⃣7️⃣8️⃣9️⃣🔟 \
 🟥🟩🟦🟪🟨🟧🟫⬜⬛🔲🔳 \
@@ -42,7 +45,63 @@ abcdefghijklmnopqrstuvwxyz \
 ▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄ \
 The last line with '\\' character at the end of line. \
 
-https://github.com/Ee-Cs/cs/blob/main/README.md
+</details>
+
+<details>
+<summary>Learning GitHub Flavored Markdown - 3rd Part</summary>
+
+JSON
+```json
+{
+  "a" : [
+    {
+      "b" : "c"
+    }
+  ]
+}
+```
+To download `SHASUMS256.txt` using `curl`:
+```bash
+curl -O https://nodejs.org/dist/vx.y.z/SHASUMS256.txt
+```
+> [!NOTE]
+> Useful information that users should know, even when skimming content.
+
+> [!TIP]
+> Helpful advice for doing things better or more easily.
+
+> [!IMPORTANT]
+> Key information users need to know to achieve their goal.
+
+> [!WARNING]
+> Urgent info that needs immediate user attention to avoid problems.
+
+> [!CAUTION]
+> Advises about risks or negative outcomes of certain actions.
+</details>
+
+<details>
+<summary>Learning GitHub Flavored Markdown - 4th Part</summary>
+
+Hard line break - add \ or two spaces at the end of line  
+
+The visualization of the color is only supported in issues, pull requests, and discussions. \
+`#FF0000` `#00FF00` `#0000FF` `#FFFF00` `#FF00FF` `#0000FF` `#FFFFFF`
+
+CSS styles are not active in GitHub :warning:
+<span style="color:red">red</span>  
+<span style="color:green">green</span>  
+<span style="color:blue">blue</span>  
+<span style="color:cyan">cyan</span>  
+<span style="color:magenta">magenta</span>  
+<span style="color:yellow">yellow</span>  
+<span style="color:orange">orange</span>  
+<span style="color:brown">brown</span>  
+<span style="color:gray">gray</span>  
+</details>
+
+<details>
+<summary>Learning GitHub geojson</summary>
 
 ```geojson
 {
@@ -289,54 +348,6 @@ https://github.com/Ee-Cs/cs/blob/main/README.md
   ]
 }
 ```
-
-<details>
-<summary>Learning GitHub Flavored Markdown</summary>
-
-Hard line break - add \ or two spaces at the end of line  
-
-The visualization of the color is only supported in issues, pull requests, and discussions. \
-`#FF0000` `#00FF00` `#0000FF` `#FFFF00` `#FF00FF` `#0000FF` `#FFFFFF`
-
-CSS styles are not active in GitHub :warning:
-<span style="color:red">red</span>  
-<span style="color:green">green</span>  
-<span style="color:blue">blue</span>  
-<span style="color:cyan">cyan</span>  
-<span style="color:magenta">magenta</span>  
-<span style="color:yellow">yellow</span>  
-<span style="color:orange">orange</span>  
-<span style="color:brown">brown</span>  
-<span style="color:gray">gray</span>  
 </details>
-
-JSON
-```json
-{
-  "a" : [
-    {
-      "b" : "c"
-    }
-  ]
-}
-```
-To download `SHASUMS256.txt` using `curl`:
-```bash
-curl -O https://nodejs.org/dist/vx.y.z/SHASUMS256.txt
-```
-> [!NOTE]
-> Useful information that users should know, even when skimming content.
-
-> [!TIP]
-> Helpful advice for doing things better or more easily.
-
-> [!IMPORTANT]
-> Key information users need to know to achieve their goal.
-
-> [!WARNING]
-> Urgent info that needs immediate user attention to avoid problems.
-
-> [!CAUTION]
-> Advises about risks or negative outcomes of certain actions.
 
 [A link to that custom anchor](#my-custom-anchor-point)
