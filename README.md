@@ -94,6 +94,94 @@ CSS styles are not active in GitHub :warning:
 ---
 </details>
 
+> [!NOTE]
+> Useful information that users should know, even when skimming content.
+
+> [!TIP]
+> Helpful advice for doing things better or more easily.
+
+> [!IMPORTANT]
+> Key information users need to know to achieve their goal.
+
+> [!WARNING]
+> Urgent info that needs immediate user attention to avoid problems.
+
+> [!CAUTION]
+> Advises about risks or negative outcomes of certain actions.
+
+<details>
+<summary>⭕ geojson</summary>
+
+```geojson
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              20.97034680155963,
+              52.25700519741804
+            ],
+            [
+              20.97034680155963,
+              52.21543011192179
+            ],
+            [
+              21.046198151807346,
+              52.21543011192179
+            ],
+            [
+              21.046198151807346,
+              52.25700519741804
+            ],
+            [
+              20.97034680155963,
+              52.25700519741804
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "coordinates": [
+          [
+            20.980898301725688,
+            52.2162839509499
+          ],
+          [
+            20.98906078298549,
+            52.224821438527925
+          ],
+          [
+            21.011557377678685,
+            52.2300650814438
+          ],
+          [
+            21.006381170050247,
+            52.2383560899774
+          ],
+          [
+            21.021113453300387,
+            52.24225720520977
+          ]
+        ],
+        "type": "LineString"
+      }
+    }
+  ]
+}
+```
+
+---
+</details>
 
 ```geojson
 {
@@ -272,94 +360,5 @@ CSS styles are not active in GitHub :warning:
   ]
 }
 ```
-
-<details>
-<summary>⭕ geojson</summary>
-
-```geojson
-{
-  "type": "FeatureCollection",
-  "features": [
-    {
-      "type": "Feature",
-      "properties": {},
-      "geometry": {
-        "coordinates": [
-          [
-            [
-              20.97034680155963,
-              52.25700519741804
-            ],
-            [
-              20.97034680155963,
-              52.21543011192179
-            ],
-            [
-              21.046198151807346,
-              52.21543011192179
-            ],
-            [
-              21.046198151807346,
-              52.25700519741804
-            ],
-            [
-              20.97034680155963,
-              52.25700519741804
-            ]
-          ]
-        ],
-        "type": "Polygon"
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {},
-      "geometry": {
-        "coordinates": [
-          [
-            20.980898301725688,
-            52.2162839509499
-          ],
-          [
-            20.98906078298549,
-            52.224821438527925
-          ],
-          [
-            21.011557377678685,
-            52.2300650814438
-          ],
-          [
-            21.006381170050247,
-            52.2383560899774
-          ],
-          [
-            21.021113453300387,
-            52.24225720520977
-          ]
-        ],
-        "type": "LineString"
-      }
-    }
-  ]
-}
-```
-
----
-</details>
-
-> [!NOTE]
-> Useful information that users should know, even when skimming content.
-
-> [!TIP]
-> Helpful advice for doing things better or more easily.
-
-> [!IMPORTANT]
-> Key information users need to know to achieve their goal.
-
-> [!WARNING]
-> Urgent info that needs immediate user attention to avoid problems.
-
-> [!CAUTION]
-> Advises about risks or negative outcomes of certain actions.
 
 [Back to the top of the page](#top)
