@@ -67,6 +67,7 @@ To download `SHASUMS256.txt` using `curl`:
 ```bash
 curl -O https://nodejs.org/dist/vx.y.z/SHASUMS256.txt
 ```
+
 ---
 </details>
 
@@ -78,7 +79,7 @@ Hard line break - add \ or two spaces at the end of line
 The visualization of the color is only supported in issues, pull requests, and discussions. \
 `#FF0000` `#00FF00` `#0000FF` `#FFFF00` `#FF00FF` `#0000FF` `#FFFFFF`
 
-CSS styles are not active in GitHub :warning:
+CSS styles are not active in GitHub :warning:  
 <span style="color:red">red</span>  
 <span style="color:green">green</span>  
 <span style="color:blue">blue</span>  
@@ -87,7 +88,9 @@ CSS styles are not active in GitHub :warning:
 <span style="color:yellow">yellow</span>  
 <span style="color:orange">orange</span>  
 <span style="color:brown">brown</span>  
-<span style="color:gray">gray</span>
+<span style="color:gray">gray</span>  
+
+
 ---
 </details>
 
@@ -339,6 +342,7 @@ CSS styles are not active in GitHub :warning:
   ]
 }
 ```
+
 ---
 </details>
 
