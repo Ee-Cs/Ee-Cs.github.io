@@ -1,9 +1,9 @@
 # 'Ee-Cs' GitHub Pages</h3>
-- (https://Ee-Cs.github.io/RecruitmentTaskS1/)[Recruitment Task S1]
-- (https://Ee-Cs.github.io/RecruitmentTaskS2/)[Recruitment Task S2]
-- (https://Ee-Cs.github.io/RecruitmentTaskSR1/)[Recruitment Task SR1]
+- [Recruitment Task S1](https://Ee-Cs.github.io/RecruitmentTaskS1/)
+- [Recruitment Task S2](https://Ee-Cs.github.io/RecruitmentTaskS2/)
+- [Recruitment Task SR1](https://Ee-Cs.github.io/RecruitmentTaskSR1/)
 
-- (https://github.com/k1729p/Portfolio)[Portfolio]
+- [Portfolio](https://github.com/k1729p/Portfolio)
 
 ---
 
