@@ -4,11 +4,11 @@
 ---
 
 <!-- This content will not appear in the rendered Markdown -->
-<a name="my-custom-anchor-point"></a>
+<a name="top"></a>
 GitHub Docs [Basic writing and formatting syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 
 <details>
-<summary>⭕ Learning GitHub Flavored Markdown - 1st Part</summary>
+<summary>⭕ Section 1</summary>
 
 # A first-level heading (One Hash Line)
 ## A second-level heading (Two Hashes Line)
@@ -19,11 +19,12 @@ GitHub Docs [Basic writing and formatting syntax](https://docs.github.com/en/get
 1st line **bold** *italic* <sub>Subscript</sub> <sup>Superscript</sup> <ins>Underline</ins> \
 2nd line \
 3rd line
+
 ---
 </details>
 
 <details>
-<summary>⭕ Learning GitHub Flavored Markdown - 2nd Part</summary>
+<summary>⭕ Section 2</summary>
 
 0️⃣1️⃣2️⃣3️⃣4️⃣5️⃣6️⃣7️⃣8️⃣9️⃣🔟 \
 🟥🟩🟦🟪🟨🟧🟫⬜⬛🔲🔳 \
@@ -50,7 +51,7 @@ The last line with '\\' character at the end of line. \
 </details>
 
 <details>
-<summary>⭕ Learning GitHub Flavored Markdown - 3rd Part</summary>
+<summary>⭕ Section 3</summary>
 
 JSON
 ```json
@@ -66,25 +67,11 @@ To download `SHASUMS256.txt` using `curl`:
 ```bash
 curl -O https://nodejs.org/dist/vx.y.z/SHASUMS256.txt
 ```
-> [!NOTE]
-> Useful information that users should know, even when skimming content.
-
-> [!TIP]
-> Helpful advice for doing things better or more easily.
-
-> [!IMPORTANT]
-> Key information users need to know to achieve their goal.
-
-> [!WARNING]
-> Urgent info that needs immediate user attention to avoid problems.
-
-> [!CAUTION]
-> Advises about risks or negative outcomes of certain actions.
 ---
 </details>
 
 <details>
-<summary>⭕ Learning GitHub Flavored Markdown - 4th Part</summary>
+<summary>⭕ Section 4</summary>
 
 Hard line break - add \ or two spaces at the end of line  
 
@@ -100,12 +87,12 @@ CSS styles are not active in GitHub :warning:
 <span style="color:yellow">yellow</span>  
 <span style="color:orange">orange</span>  
 <span style="color:brown">brown</span>  
-<span style="color:gray">gray</span>  
+<span style="color:gray">gray</span>
 ---
 </details>
 
 <details>
-<summary>⭕ Learning GitHub geojson</summary>
+<summary>⭕ geojson</summary>
 
 ```geojson
 {
@@ -355,4 +342,19 @@ CSS styles are not active in GitHub :warning:
 ---
 </details>
 
-[A link to that custom anchor](#my-custom-anchor-point)
+> [!NOTE]
+> Useful information that users should know, even when skimming content.
+
+> [!TIP]
+> Helpful advice for doing things better or more easily.
+
+> [!IMPORTANT]
+> Key information users need to know to achieve their goal.
+
+> [!WARNING]
+> Urgent info that needs immediate user attention to avoid problems.
+
+> [!CAUTION]
+> Advises about risks or negative outcomes of certain actions.
+
+[Back to the top of the page](#top)
