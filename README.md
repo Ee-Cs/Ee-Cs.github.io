@@ -94,8 +94,6 @@ CSS styles are not active in GitHub :warning:
 ---
 </details>
 
-<details>
-<summary>⭕ geojson</summary>
 
 ```geojson
 {
@@ -274,6 +272,9 @@ CSS styles are not active in GitHub :warning:
   ]
 }
 ```
+
+<details>
+<summary>⭕ geojson</summary>
 
 ```geojson
 {
