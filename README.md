@@ -8,7 +8,7 @@
 GitHub Docs [Basic writing and formatting syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 
 <details>
-<summary>Learning GitHub Flavored Markdown - 1st Part</summary>
+<summary>⭕ Learning GitHub Flavored Markdown - 1st Part</summary>
 
 # A first-level heading (One Hash Line)
 ## A second-level heading (Two Hashes Line)
@@ -19,10 +19,11 @@ GitHub Docs [Basic writing and formatting syntax](https://docs.github.com/en/get
 1st line **bold** *italic* <sub>Subscript</sub> <sup>Superscript</sup> <ins>Underline</ins> \
 2nd line \
 3rd line
+---
 </details>
 
 <details>
-<summary>Learning GitHub Flavored Markdown - 2nd Part</summary>
+<summary>⭕ Learning GitHub Flavored Markdown - 2nd Part</summary>
 
 0️⃣1️⃣2️⃣3️⃣4️⃣5️⃣6️⃣7️⃣8️⃣9️⃣🔟 \
 🟥🟩🟦🟪🟨🟧🟫⬜⬛🔲🔳 \
@@ -45,10 +46,11 @@ abcdefghijklmnopqrstuvwxyz \
 ▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄ \
 The last line with '\\' character at the end of line. \
 
+---
 </details>
 
 <details>
-<summary>Learning GitHub Flavored Markdown - 3rd Part</summary>
+<summary>⭕ Learning GitHub Flavored Markdown - 3rd Part</summary>
 
 JSON
 ```json
@@ -78,10 +80,11 @@ curl -O https://nodejs.org/dist/vx.y.z/SHASUMS256.txt
 
 > [!CAUTION]
 > Advises about risks or negative outcomes of certain actions.
+---
 </details>
 
 <details>
-<summary>Learning GitHub Flavored Markdown - 4th Part</summary>
+<summary>⭕ Learning GitHub Flavored Markdown - 4th Part</summary>
 
 Hard line break - add \ or two spaces at the end of line  
 
@@ -98,10 +101,11 @@ CSS styles are not active in GitHub :warning:
 <span style="color:orange">orange</span>  
 <span style="color:brown">brown</span>  
 <span style="color:gray">gray</span>  
+---
 </details>
 
 <details>
-<summary>Learning GitHub geojson</summary>
+<summary>⭕ Learning GitHub geojson</summary>
 
 ```geojson
 {
@@ -348,6 +352,7 @@ CSS styles are not active in GitHub :warning:
   ]
 }
 ```
+---
 </details>
 
 [A link to that custom anchor](#my-custom-anchor-point)
