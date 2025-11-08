@@ -63,6 +63,15 @@ JSON
   ]
 }
 ```
+Java
+```java
+public class Application {
+
+	public static void main(String[] args) {
+		System.out.println("- ".repeat(3));
+	}
+}
+```
 To download `SHASUMS256.txt` using `curl`:
 ```bash
 curl -O https://nodejs.org/dist/vx.y.z/SHASUMS256.txt
