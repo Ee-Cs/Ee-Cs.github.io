@@ -53,36 +53,6 @@ The last line with '\\' character at the end of line. \
 <details>
 <summary>⭕ Section 3</summary>
 
-JSON
-```json
-{
-  "a" : [
-    {
-      "b" : "c"
-    }
-  ]
-}
-```
-Java
-```java
-public class Application {
-
-	public static void main(String[] args) {
-		System.out.println("- ".repeat(3));
-	}
-}
-```
-To download `SHASUMS256.txt` using `curl`:
-```bash
-curl -O https://nodejs.org/dist/vx.y.z/SHASUMS256.txt
-```
-
----
-</details>
-
-<details>
-<summary>⭕ Section 4</summary>
-
 Hard line break - add \ or two spaces at the end of line  
 
 The visualization of the color is only supported in issues, pull requests, and discussions. \
@@ -99,11 +69,12 @@ CSS styles are not active in GitHub :warning:
 <span style="color:brown">brown</span>  
 <span style="color:gray">gray</span>  
 
-
 ---
 </details>
 
-[**radar-diagram.md**](radar-diagram.md)
+[**fenced-code-blocks.md**](fenced-code-blocks.md)
+
+[**radar-diagrams.md**](radar-diagrams.md)
 
 [**geojson.md**](geojson.md)
 
