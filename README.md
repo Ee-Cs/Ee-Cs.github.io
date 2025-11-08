@@ -23,35 +23,16 @@ GitHub Docs [Basic writing and formatting syntax](https://docs.github.com/en/get
 ---
 </details>
 
+[**emojis.md**](emojis.md)
+
+[**fenced-code-blocks.md**](fenced-code-blocks.md)
+
+[**radar-diagrams.md**](radar-diagrams.md)
+
+[**geojson.md**](geojson.md)
+
 <details>
 <summary>⭕ Section 2</summary>
-
-0️⃣1️⃣2️⃣3️⃣4️⃣5️⃣6️⃣7️⃣8️⃣9️⃣🔟 \
-🟥🟩🟦🟪🟨🟧🟫⬜⬛🔲🔳 \
-🔴🟢🔵🟣🟡🟠🟤⚪⚫ \
-❤️💚💙💜💛🧡🤎🤍🖤 \
-⬇️🔽⏬⯆⮟⏷🡇🠟🠋🠇🡻🡫🡣▼▽🔻 \
-➡️▶️⏩⯈⮞⏵🡆🠞🠊🠆🡺🡪🡢▶▷🔶🔸◆ \
-⬅️◀️⏪⯇⮜⏴🡄🠜🠈🠄🡸🡨🡠◀◁🔷🔹◇ \
-⬆️🔼⏫⯅⮝⏶🡅🠝🠉🠅🡹🡩🡡▲△🔺🛆 \
-✔️🆗❎❌✖️➕➖⭕ \
-▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄ \
-1234567890 \
-𝟭𝟮𝟯𝟰𝟱𝟲𝟳𝟴𝟵𝟬 \
-ABCDEFGHIJKLMNOPQRSTUVWXYZ \
-abcdefghijklmnopqrstuvwxyz \
-𝐚𝐛𝐜𝐝𝐞𝐟𝐠𝐡𝐢𝐣𝐤𝐥𝐦𝐧𝐨𝐩𝐪𝐫𝐬𝐭𝐮𝐯𝐰𝐱𝐲𝐳 \
-𝐀𝐁𝐂𝐃𝐄𝐅𝐆𝐇𝐈𝐉𝐊𝐋𝐌𝐍𝐎𝐏𝐐𝐑𝐒𝐓𝐔𝐕𝐖𝐗𝐘𝐙 \
-𝓪𝓫𝓬𝓭𝓮𝓯𝓰𝓱𝓲𝓳𝓴𝓵𝓶𝓷𝓸𝓹𝓺𝓻𝓼𝓽𝓾𝓿𝔀𝔁𝔂𝔃 \
-𝓐𝓑𝓒𝓓𝓔𝓕𝓖𝓗𝓘𝓙𝓚𝓛𝓜𝓝𝓞𝓟𝓠𝓡𝓢𝓣𝓤𝓥𝓦𝓧𝓨𝓩 \
-▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄ \
-The last line with '\\' character at the end of line. \
-
----
-</details>
-
-<details>
-<summary>⭕ Section 3</summary>
 
 Hard line break - add \ or two spaces at the end of line  
 
@@ -71,12 +52,6 @@ CSS styles are not active in GitHub :warning:
 
 ---
 </details>
-
-[**fenced-code-blocks.md**](fenced-code-blocks.md)
-
-[**radar-diagrams.md**](radar-diagrams.md)
-
-[**geojson.md**](geojson.md)
 
 > [!NOTE]
 > Useful information that users should know, even when skimming content.
