@@ -26,31 +26,12 @@ Hard line break - add \ or two spaces at the end of line
 ---
 </details>
 
-- [**lists-and-tables.md**](lists-and-tables.md)
-- [**emojis.md**](emojis.md)
-- [**fenced-code-blocks.md**](fenced-code-blocks.md)
-- [**radar-diagrams.md**](radar-diagrams.md)
-- [**geojson.md**](geojson.md)
+| [**lists-and-tables.md**](lists-and-tables.md) |
+| [**emojis.md**](emojis.md) |
+| [**fenced-code-blocks.md**](fenced-code-blocks.md) |
+| [**radar-diagrams.md**](radar-diagrams.md) |
+| [**geojson.md**](geojson.md) |
 
-<details>
-<summary>⭕ Section 2</summary>
-
-The visualization of the color is only supported in issues, pull requests, and discussions. \
-`#FF0000` `#00FF00` `#0000FF` `#FFFF00` `#FF00FF` `#0000FF` `#FFFFFF`
-
-CSS styles are ==not active== in GitHub :warning:  
-<span style="color:red">red</span>  
-<span style="color:green">green</span>  
-<span style="color:blue">blue</span>  
-<span style="color:cyan">cyan</span>  
-<span style="color:magenta">magenta</span>  
-<span style="color:yellow">yellow</span>  
-<span style="color:orange">orange</span>  
-<span style="color:brown">brown</span>  
-<span style="color:gray">gray</span>  
-
----
-</details>
 
 > [!NOTE]
 > Useful information that users should know, even when skimming content.
