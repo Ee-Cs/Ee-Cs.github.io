@@ -27,16 +27,16 @@ Hard line break - add \ or two spaces at the end of line
 
 | |
 | --- |
-| [**lists-and-tables.md**](lists-and-tables.md) |
-| [**emojis.md**](emojis.md) |
-| [**fenced-code-blocks.md**](fenced-code-blocks.md) |
-| [**radar-diagrams.md**](radar-diagrams.md) |
-| [**geojson.md**](geojson.md) |
+| [**lists-and-tables.md**](files/lists-and-tables.md) |
+| [**emojis.md**](files/emojis.md) |
+| [**fenced-code-blocks.md**](files/fenced-code-blocks.md) |
+| [**radar-diagrams.md**](files/radar-diagrams.md) |
+| [**geojson.md**](files/geojson.md) |
 
 | |
 | --- |
-| [**scripting.html**](https://ee-cs.github.io/scripting.html) |
-| [**family-tree.html**](https://ee-cs.github.io/family-tree.html) |
+| [**scripting.html**](https://ee-cs.github.io/files/scripting.html) |
+| [**family-tree.html**](https://ee-cs.github.io/files/family-tree.html) |
             
 
 > [!NOTE]
