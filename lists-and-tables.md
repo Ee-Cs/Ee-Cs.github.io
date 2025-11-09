@@ -5,26 +5,29 @@
 | ←←←←←←←←←←←← | ———————————— | →→→→→→→→→→→→ |
 | ↑↑↑↑↑↑↑↑↑↑↑↑ | ↑↑↑↑↑↑↑↑↑↑↑↑ | ↑↑↑↑↑↑↑↑↑↑↑↑ |
 
-1. 🟥First item
-1. 🟥Second item
-1. 🟥Third item
+1. 🟥1st item
+1. 🟥2nd item
+1. 🟥3rd item
 <!-- Blank -->
-1. 🟥First item
-   1. 🟩First item
-      1. 🟦First item
-      1. 🟦Second item
-      1. 🟦Third item
-   1. 🟩Second item
-   1. 🟩Third item
-1. 🟥Second step.
-   - 🟩First item
-     - 🟦First item
-     - 🟦Second item
-     - 🟦Third item
-   - 🟩Second item
-   - 🟩Third item
-1. 🟥Third item
+1. 🟥1st item
+   1. 🟩1st item
+      1. 🟦1st item
+      1. 🟦2nd item
+      1. 🟦3rd item
+   1. 🟩2nd item
+   1. 🟩3rd item
+1. 🟥2nd item.
+   - 🟩1st item
+     - 🟦1st item
+     - 🟦2nd item
+     - 🟦3rd item
+   - 🟩2nd item
+   - 🟩3rd item
+1. 🟥3rd item
 <!-- Blank -->
-1. 🟥First item
-1. 🟥Second item
-1. 🟥Third item
+1. 🟥1st item
+1. 🟥2nd item
+1. 🟥3rd item
+
+| |
+| --- |
