@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <title>Scripting</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="icon" href="favicon.ico" />
+  <style>
+  </style>
+</head>
+<body>
+<h3>Scripting</h3>
+<p>Value: <span id="value">2</span></p>
+<p><a href="?x=6" onclick="compute(1); return false;">Add</a></p>
+<p><a href="?x=4" onclick="compute(-1); return false;">Subtract</a></p>
+<script>
+ var value = 2;
+ function compute(delta) {
+   value = value + delta;
+   document.getElementById('value').textContent = value;
+ }
+ onpopstate = function(event) {
+   setupPage(event.state);
+ }
+</script>
+</body>
+</html>

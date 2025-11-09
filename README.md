@@ -32,6 +32,7 @@ Hard line break - add \ or two spaces at the end of line
 | [**fenced-code-blocks.md**](fenced-code-blocks.md) |
 | [**radar-diagrams.md**](radar-diagrams.md) |
 | [**geojson.md**](geojson.md) |
+| [**scripting.html**](scripting.html) |
 
 > [!NOTE]
 > Useful information that users should know, even when skimming content.
