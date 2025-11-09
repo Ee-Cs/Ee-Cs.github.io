@@ -16,6 +16,9 @@ GitHub Docs [Basic writing and formatting syntax](https://docs.github.com/en/get
 #### A fourth-level heading (Four Hashes Line)
 ##### A fifth-level heading (Five Hashes Line)
 ###### A six-level heading (Six Hashes Line)
+
+Hard line break - add \ or two spaces at the end of line  
+
 1st line **bold** *italic* <sub>Subscript</sub> <sup>Superscript</sup> <ins>Underline</ins> \
 2nd line \
 3rd line
@@ -33,8 +36,6 @@ GitHub Docs [Basic writing and formatting syntax](https://docs.github.com/en/get
 
 <details>
 <summary>⭕ Section 2</summary>
-
-Hard line break - add \ or two spaces at the end of line  
 
 The visualization of the color is only supported in issues, pull requests, and discussions. \
 `#FF0000` `#00FF00` `#0000FF` `#FFFF00` `#FF00FF` `#0000FF` `#FFFFFF`

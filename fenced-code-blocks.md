@@ -17,6 +17,10 @@ public class Application {
 	}
 }
 ```
+JS
+```js
+console.log('Hello world');
+```
 Bash
 ```bash
 curl -O https://nodejs.org/dist/vx.y.z/SHASUMS256.txt
