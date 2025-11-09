@@ -8,7 +8,7 @@
 GitHub Docs [Basic writing and formatting syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 
 <details>
-<summary>⭕ Section 1</summary>
+<summary>⭕ Headings</summary>
 
 # A first-level heading (One Hash Line)
 ## A second-level heading (Two Hashes Line)
@@ -22,19 +22,15 @@ Hard line break - add \ or two spaces at the end of line
 1st line **bold** *italic* <sub>Subscript</sub> <sup>Superscript</sup> <ins>Underline</ins> \
 2nd line \
 3rd line
-
 ---
 </details>
-
-
-|     |
+| |
 | --- |
 | [**lists-and-tables.md**](lists-and-tables.md) |
 | [**emojis.md**](emojis.md) |
 | [**fenced-code-blocks.md**](fenced-code-blocks.md) |
 | [**radar-diagrams.md**](radar-diagrams.md) |
 | [**geojson.md**](geojson.md) |
-
 
 > [!NOTE]
 > Useful information that users should know, even when skimming content.
