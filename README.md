@@ -36,7 +36,7 @@ Hard line break - add \ or two spaces at the end of line
 | |
 | --- |
 | [**scripting.html**](https://ee-cs.github.io/scripting.html) |
-| [**family-tree.html**](family-tree.html) |
+| [**family-tree.html**](https://ee-cs.github.io/family-tree.html) |
             
 
 > [!NOTE]
