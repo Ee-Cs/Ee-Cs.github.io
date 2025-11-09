@@ -24,6 +24,7 @@ Hard line break - add \ or two spaces at the end of line
 3rd line
 ---
 </details>
+
 | |
 | --- |
 | [**lists-and-tables.md**](lists-and-tables.md) |
