@@ -6,23 +6,23 @@
   <link rel="icon" href="favicon.ico" />
   <style>
   </style>
+  <script>
+     var value = 2;
+     function compute(delta) {
+      value = value + delta;
+      document.getElementById('value').textContent = value;
+     }
+     onpopstate = function(event) {
+      setupPage(event.state);
+     }
+  </script>
 </head>
 <body>
-<h3>Scripting</h3>
-<p>
-<a href="?x=4" onclick="compute(-1); return false;">➖ Subtract</a>&nbsp;
-<a href="?x=6" onclick="compute(1); return false;">➕ Add </a></p>&nbsp;
-Value: <span id="value">2</span>
-</p>
-<script>
- var value = 2;
- function compute(delta) {
-   value = value + delta;
-   document.getElementById('value').textContent = value;
- }
- onpopstate = function(event) {
-   setupPage(event.state);
- }
-</script>
+  <h3>Scripting</h3>
+  <p>
+    <a href="?x=4" onclick="compute(-1); return false;">➖ Subtract</a>&nbsp;
+    <a href="?x=6" onclick="compute(1); return false;">➕ Add </a></p>&nbsp;
+    Value: <span id="value">2</span>
+  </p>
 </body>
 </html>
