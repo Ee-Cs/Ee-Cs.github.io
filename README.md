@@ -26,6 +26,8 @@ Hard line break - add \ or two spaces at the end of line
 ---
 </details>
 
+[**lists-and-tables.md**](lists-and-tables.md)
+
 [**emojis.md**](emojis.md)
 
 [**fenced-code-blocks.md**](fenced-code-blocks.md)
