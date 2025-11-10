@@ -9,8 +9,8 @@
 | |
 | --- |
 | [**headings.md**](../files/headings.md) |
-| [**lists-and-tables.md**](files/lists-and-tables.md) |
-| [**emojis.md**](./files/emojis.md) |
+| [**lists-and-tables.md**](../files/lists-and-tables.md) |
+| [**emojis.md**](../files/emojis.md) |
 | [**fenced-code-blocks.md**](../files/fenced-code-blocks.md) |
 | [**radar-diagrams.md**](../files/radar-diagrams.md) |
 | [**geojson.md**](../files/geojson.md) |
