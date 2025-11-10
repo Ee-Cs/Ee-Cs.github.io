@@ -5,7 +5,9 @@
 
 <!-- This content will not appear in the rendered Markdown -->
 <a name="top"></a>
-GitHub Docs [Basic writing and formatting syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+### GitHub Docs
+- [Basic writing and formatting syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+- [Working with advanced formatting](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting)
 
 <details>
 <summary>⭕ Files</summary>
@@ -18,6 +20,12 @@ GitHub Docs [Basic writing and formatting syntax](https://docs.github.com/en/get
 | [**fenced-code-blocks.md**](files/fenced-code-blocks.md) |
 | [**radar-diagrams.md**](files/radar-diagrams.md) |
 | [**geojson.md**](files/geojson.md) |
+           
+---
+</details>
+
+<details>
+<summary>⭕ Pages</summary>
 
 | |
 | --- |
@@ -41,6 +49,5 @@ GitHub Docs [Basic writing and formatting syntax](https://docs.github.com/en/get
 
 > [!CAUTION]
 > Advises about risks or negative outcomes of certain actions.
-
 
 [Back to the top of the page](#top)
