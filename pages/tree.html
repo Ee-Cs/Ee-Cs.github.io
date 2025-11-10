@@ -27,12 +27,12 @@
         /* Used '::before' and '::after' to draw the connectors */
         .tree li::before, .tree li::after{
           content: '';
-          position: absolute; top: 0; right: 50%;
+          position: absolute; top: 0; right: 100%;
           border-top: 1px solid #ccc;
           width: 100%; height: 20px;
         }
         .tree li::after{
-          right: auto; left: 50%;
+          right: auto; left: 100%;
           border-left: 1px solid #ccc;
         }
         /* Removing left-right connectors from elements without any siblings */
@@ -60,7 +60,7 @@
         /* Adding downward connectors from parents */
         .tree ul ul::before{
           content: '';
-          position: absolute; top: 0; left: 50%;
+          position: absolute; top: 0; left: 100%;
           border-left: 1px solid #ccc;
           width: 0; height: 20px;
         }
