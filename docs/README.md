@@ -23,8 +23,10 @@
 
 | |
 | --- |
+| [**font-families.html**](font-families.html) |
 | [**scripting.html**](https://ee-cs.github.io/pages/scripting.html) |
 | [**tree.html**](https://ee-cs.github.io/pages/tree.html) |
+| [**small-icons.html**](https://ee-cs.github.io/pages/small-icons/small-icons.html) |
            
 ---
 </details>

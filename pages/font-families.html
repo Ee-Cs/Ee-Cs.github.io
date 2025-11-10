@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>Font Families</title>
+<style type="text/css">
+.span-georgia {
+  background-color: white;
+  color: black;
+  font-family: Georgia, serif;
+  font-style: italic;
+  //font-variant: small-caps;
+  font-size: 1.5em;
+}
+.span-times-new-roman {
+  background-color: white;
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  //font-variant: small-caps;
+  font-size: 1.5em;
+}
+.span-garamond {
+  background-color: white;
+  color: black;
+  font-family: Garamond, Times, serif;
+  font-style: italic;
+  //font-variant: small-caps;
+  font-size: 1.5em;
+}
+.span-default {
+  font-variant: normal;
+  font-style: italic;
+  //font-variant: small-caps;
+  font-size: 1.5em;
+}
+.container-center-wrapper {
+  display: grid;
+  grid-template-columns: 1fr; /* Fr is a 'fractional unit', 1fr represents 1 part of the available space */
+  grid-template-rows: 100vh; /* vh: 1% of the height of the viewport, 100vh represents the size of the viewport */
+  align-items: center; /* Center the alignments for all the items of the flexible <div> element */
+  justify-items: center;
+}
+</style>
+</head>
+<body>
+<div class="container-center-wrapper">
+  <div>
+    this content is centered in the screen
+    <span class="span-georgia">This is a Text with Font Family Georgia.</span><br>
+    <span class="span-times-new-roman">This is a Text with Font Family Times New Roman.</span><br>
+    <span class="span-garamond">This is a Text with Font Family Garamond.</span><br>
+    <span class="span-default">This is a Text with Font Family Default.</span><br>
+  </div>
+</div>
+</html>
