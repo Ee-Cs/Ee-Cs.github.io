@@ -23,6 +23,7 @@
 
 | |
 | --- |
+| [**tables-and-emojis.html**](https://ee-cs.github.io/pages/tables-and-emojis.html) |
 | [**font-families.html**](https://ee-cs.github.io/pages/font-families.html) |
 | [**scripting.html**](https://ee-cs.github.io/pages/scripting.html) |
 | [**tree.html**](https://ee-cs.github.io/pages/tree.html) |
