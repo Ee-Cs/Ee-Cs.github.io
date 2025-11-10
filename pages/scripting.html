@@ -9,11 +9,21 @@
   <script>
      var value = 2;
      function compute(delta) {
-      value = value + delta;
-      document.getElementById('value').textContent = value;
+       value = value + delta;
+       document.getElementById('value').textContent = value;
+       if(value < 2) {
+         document.getElementById('value').style.backgroundColor = 'lightyellow';
+         document.getElementById('value').style.color = 'red';
+       } else if((value === 2)) {
+         document.getElementById('value').style.backgroundColor = 'white';
+         document.getElementById('value').style.color = 'green';
+       } else {
+         document.getElementById('value').style.backgroundColor = 'lightyellow';
+         document.getElementById('value').style.color = 'blue';
+       }
      }
      onpopstate = function(event) {
-      setupPage(event.state);
+       setupPage(event.state);
      }
   </script>
 </head>
