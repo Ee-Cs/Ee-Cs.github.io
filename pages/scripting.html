@@ -4,7 +4,11 @@
   <title>Scripting</title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <link rel="icon" href="favicon.ico" />
-  <style>
+  <style type="text/css">
+  .span-value {
+    font-size: 2em;
+	font-weight: bold;
+  }
   </style>
   <script>
      var value = 2;
@@ -12,14 +16,14 @@
        value = value + delta;
        document.getElementById('value').textContent = value;
        if(value < 2) {
-         document.getElementById('value').style.backgroundColor = 'lightyellow';
-         document.getElementById('value').style.color = 'red';
+         document.getElementById('value').style.backgroundColor = 'thistle';
+         document.getElementById('value').style.color = 'black';
        } else if((value === 2)) {
-         document.getElementById('value').style.backgroundColor = 'white';
-         document.getElementById('value').style.color = 'green';
+         document.getElementById('value').style.backgroundColor = 'palegreen';
+         document.getElementById('value').style.color = 'black';
        } else {
-         document.getElementById('value').style.backgroundColor = 'lightyellow';
-         document.getElementById('value').style.color = 'blue';
+         document.getElementById('value').style.backgroundColor = 'white';
+         document.getElementById('value').style.color = 'red';
        }
      }
      onpopstate = function(event) {
@@ -32,7 +36,7 @@
   <p>
     <a href="?x=4" onclick="compute(-1); return false;">➖ Subtract</a>&nbsp;
     <a href="?x=6" onclick="compute(1); return false;">➕ Add </a></p>&nbsp;
-    Value: <span id="value">2</span>
+    Value: <span class="span-value" id="value">2</span>
   </p>
   <hr>
   <p>
