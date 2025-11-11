@@ -15,23 +15,26 @@
   </style>
   <script>
     function compute(delta) {
-      var value = document.getElementById('value').textContent;
-	  value = value + delta;
-      document.getElementById('value').textContent = value;
+      var valueElement = document.getElementById('value');
+      // Extract the number part after "Value: "
+      var value = parseInt(valueElement.textContent.replace('Value: ', ''), 10);
+      value = value + delta;
+      // Update with new value prefixed by "Value: "
+      valueElement.textContent = 'Value: ' + value;
       if (value < 2) {
-        document.getElementById('value').style.color = 'black';
-        document.getElementById('value').style.backgroundColor = 'thistle';
-      } else if ((value === 2)) {
-        document.getElementById('value').style.color = 'black';
-        document.getElementById('value').style.backgroundColor = 'palegreen';
+        valueElement.style.color = 'black';
+        valueElement.style.backgroundColor = 'thistle';
+      } else if (value === 2) {
+        valueElement.style.color = 'black';
+        valueElement.style.backgroundColor = 'palegreen';
       } else {
-        document.getElementById('value').style.color = 'red';
-        document.getElementById('value').style.backgroundColor = 'yellow';
+        valueElement.style.color = 'red';
+        valueElement.style.backgroundColor = 'yellow';
       }
     }
-	
+
     var index = 0;
-	
+
     function display() {
       var colors = ['lightpink', 'lightgreen', 'lightblue', 'white'];
       var elem = document.getElementById('txt-1');
@@ -42,7 +45,7 @@
         index = 0;
       }
     }
-	
+
     function researchArrays() {
       const array = ["🟥 Red", "🟩 Green", "🟦 Blue"];
       console.log("arrow function");
@@ -57,20 +60,20 @@
         console.log("\tkey[%s], value[%s]", key, value)
       );
     }
-	
+
     function researchArraysAndJson() {
       const json = JSON.stringify(["🟧 Orange", "🟨 Yellow", "🟪 Purple"]);
       console.log("ARRAY 🠊 JSON, json%s", json);
       console.log("JSON 🠊 ARRAY, array[%s]", JSON.parse(json));
     }
-	
+
     function researchSets() {
       const set = new Set(["🟥 Red", "🟩 Green", "🟦 Blue"]);
       set.forEach((value) => {
         console.log("\tvalue[%s]", value);
       });
     }
-	
+
     function researchMaps() {
       const map = new Map([
         ["🟥 Red", "🟧 Orange"],
@@ -81,7 +84,7 @@
         console.log("\tkey[%s],\tvalue[%s]", key, value);
       });
     }
-	
+
     function researchFlatMaps() {
       const labels = ["First", "Unknown", "Second", "Third", "Unknown", "Fourth"];
       const fromTo = labels
@@ -93,7 +96,7 @@
       console.log(fromTo.join(" ❌  "));
 
     }
-	
+
     function researchClosure() {
       function withSquare(square) {
         return function (circle) {
@@ -107,14 +110,14 @@
         "🔵"
       )}`;
     }
-	
+
     function researchDefaultParameter(param) {
       if (param === undefined) {
         param = "The Default";
       }
       return param;
     }
-	
+
     function researchGenerators() {
       const generatorWrapper = {
         *generator() {
@@ -135,7 +138,7 @@
         generatorFunction.next().value,
       ]);
     }
-	
+
     function researchClassesAndGenerators() {
       class ColorCircle {
         static array = "⚪—🟡—🟠—🔴—🟣—🔵—🟢—🟤—⚫".split("—");
@@ -175,7 +178,7 @@
         (sq) => console.log("%s", sq)
       );
     }
-	
+
     function researchFunctionParameters() {
       function multiplyParameters(multiplier, ...theArgs) {
         return theArgs.map((element) => multiplier * element);
@@ -201,7 +204,7 @@
       console.log("sorted result[%s]", wrapper.sortParameters(...[9, 7, 8, 6]));
       console.log("accumulated result[%d]", wrapper.accumulateResults(1, 2, 3, 4, 5).toFixed(2));
     }
-	
+
     function researchRoundingNumbers() {
       for (const delta of [1, 2, 3, 4, 5, 6, 7, 8, 9]) {
         const number = 123.45 + 0.001 * delta;
@@ -210,7 +213,7 @@
         console.log(" 'round'  %d", Math.round(Number(number + "e+2")) + "e-2");
       }
     }
-	
+
     function researchDateAndTime() {
       const date = new Date("2000-12-31T13:34:56");// Hour is '13'!
       const dateUTC = Date.UTC(2000, 11, 31, 12, 34, 56);// Month is '11'!
@@ -232,7 +235,7 @@
       console.log("Rounded     date[%s]", dateTimeFormat.format(date));
       console.log("Rounded UTC date[%s]", dateTimeFormat.format(dateUTC));
     }
-	
+
     function researchConsoleLogging() {
       console.log("No indentation");
       console.group();
@@ -249,7 +252,7 @@
       console.warn("Logged with the level 'warn'");
       console.error("Logged with the level 'error'");
     }
-	
+
     function researchScripting() {
       console.log("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄ Arrays ▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄");
       researchArrays();
@@ -295,7 +298,7 @@
     <a href="?x=6" onclick="compute(1); return false;">➕ Add </a>
   </p>
   <p>
-  Value: <span class="span-value" id="value">2</span>
+    Value: <span class="span-value" id="value">2</span>
   </p>
   <p>
     <a href="?x=4" onclick="display(); return false;">Display</a>
