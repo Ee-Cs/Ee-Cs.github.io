@@ -14,9 +14,8 @@
     }
   </style>
   <script>
-    var value = 2;
     function compute(delta) {
-      value = value + delta;
+      var value = document.getElementById('value').textContent + delta;
       document.getElementById('value').textContent = value;
       if (value < 2) {
         document.getElementById('value').style.color = 'black';
@@ -29,17 +28,20 @@
         document.getElementById('value').style.backgroundColor = 'yellow';
       }
     }
-    var colors = ['lightpink', 'lightgreen', 'lightblue', 'white'];
+	
     var index = 0;
+	
     function display() {
+      var colors = ['lightpink', 'lightgreen', 'lightblue', 'white'];
       var elem = document.getElementById('txt-1');
       elem.style.backgroundColor = colors[index];
       elem.textContent = colors[index];
       index++;
-      if (index === colors) {
+      if (index === colors.length) {
         index = 0;
       }
     }
+	
     function researchArrays() {
       const array = ["🟥 Red", "🟩 Green", "🟦 Blue"];
       console.log("arrow function");
@@ -54,17 +56,20 @@
         console.log("\tkey[%s], value[%s]", key, value)
       );
     }
+	
     function researchArraysAndJson() {
       const json = JSON.stringify(["🟧 Orange", "🟨 Yellow", "🟪 Purple"]);
       console.log("ARRAY 🠊 JSON,    json%s", json);
       console.log("JSON 🠊 ARRAY, array%s", JSON.parse(json));
     }
+	
     function researchSets() {
       const set = new Set(["🟥 Red", "🟩 Green", "🟦 Blue"]);
       set.forEach((value) => {
         console.log("\tvalue[%s]", value);
       });
     }
+	
     function researchMaps() {
       const map = new Map([
         ["🟥 Red", "🟧 Orange"],
@@ -75,6 +80,7 @@
         console.log("\tkey[%s],\tvalue[%s]", key, value);
       });
     }
+	
     function researchFlatMaps() {
       const labels = ["First", "Unknown", "Second", "Third", "Unknown", "Fourth"];
       const fromTo = labels
@@ -86,6 +92,7 @@
       console.log(fromTo.join(" ❌  "));
 
     }
+	
     function researchClosure() {
       function withSquare(square) {
         return function (circle) {
@@ -99,12 +106,14 @@
         "🔵"
       )}`;
     }
+	
     function researchDefaultParameter(param) {
       if (param === undefined) {
         param = "The Default";
       }
       return param;
     }
+	
     function researchGenerators() {
       const generatorWrapper = {
         *generator() {
@@ -125,6 +134,7 @@
         generatorFunction.next().value,
       ]);
     }
+	
     function researchClassesAndGenerators() {
       class ColorCircle {
         static array = "⚪—🟡—🟠—🔴—🟣—🔵—🟢—🟤—⚫".split("—");
@@ -164,6 +174,7 @@
         (sq) => console.log("%s", sq)
       );
     }
+	
     function researchFunctionParameters() {
       function multiplyParameters(multiplier, ...theArgs) {
         return theArgs.map((element) => multiplier * element);
@@ -192,6 +203,7 @@
         wrapper.accumulateResults(1, 2, 3, 4, 5).toFixed(2)
       );
     }
+	
     function researchRoundingNumbers() {
       for (const delta of [1, 2, 3, 4, 5, 6, 7, 8, 9]) {
         const number = 123.45 + 0.001 * delta;
@@ -200,6 +212,7 @@
         console.log(" 'round'  %d", Math.round(Number(number + "e+2")) + "e-2");
       }
     }
+	
     function researchDateAndTime() {
       const date = new Date("2000-12-31T13:34:56");// Hour is '13'!
       const dateUTC = Date.UTC(2000, 11, 31, 12, 34, 56);// Month is '11'!
@@ -221,6 +234,7 @@
       console.log("Rounded     date[%s]", dateTimeFormat.format(date));
       console.log("Rounded UTC date[%s]", dateTimeFormat.format(dateUTC));
     }
+	
     function researchConsoleLogging() {
       console.log("This is the log level");
       console.info("This is the info level");
@@ -238,7 +252,8 @@
       console.groupEnd();
       console.log("No indentation");
     }
-    function research() {
+	
+    function researchScripting() {
       console.log("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄ Arrays ▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄");
       researchArrays();
       console.log("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄ Array & JSON ▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄");
@@ -276,18 +291,19 @@
 <body>
   <h3>JavaScript Scripting</h3>
   <p>
-    <a href="?x=4" onclick="compute(-1); return false;">➖ Subtract</a>&nbsp;
-    <a href="?x=6" onclick="compute(1); return false;">➕ Add </a>
-  </p>&nbsp;
-  Value: <span class="span-value" id="value">2</span>
+    <a href="?x=4" onclick="researchScripting(); return false;">Research Scripting</a>
   </p>
   <p>
-    <a href="?x=4" onclick="research(); return false;">Research</a>
+    <a href="?x=4" onclick="compute(-1); return false;">➖ Subtract</a>&nbsp;
+    <a href="?x=6" onclick="compute(1); return false;">➕ Add </a>
+  </p>
+  <p>
+  Value: <span class="span-value" id="value">2</span>
   </p>
   <p>
     <a href="?x=4" onclick="display(); return false;">Display</a>
   </p>
-  <textarea id="txt-1" name="txt-1" rows="20" cols="120"></textarea>
+  <textarea id="txt-1" name="txt-1" rows="10" cols="200"></textarea>
   <hr>
   <p>
     <a href="https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-history-pushstate">HTML Living
