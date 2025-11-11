@@ -48,14 +48,22 @@
     var colorIndex = 0;
 
     function writeToTextArea() {
-      var fgColors = ['red', 'green', 'blue', 'black'];
-      var bgColors = ['lightpink', 'lightgreen', 'lightblue', 'white'];
+      var colorArray = [
+		'Red', 'Green', 'Blue',
+		'Cyan', 'Magenta', 'Yellow',
+		'Orange', 'Black'];
+      var bgColorArray = [
+		'MistyRose', 'HoneyDew', 'AliceBlue',
+		'Black', 'Lavender', 'Black',
+		'Black', 'White'];
       var elem = document.getElementById('txt-1');
-      elem.style.color = fgColors[colorIndex];
-      elem.style.backgroundColor = bgColors[colorIndex];
-      elem.textContent = elem.textContent + '\n' + fgColors[colorIndex] + '\n' + bgColors[colorIndex];
+      elem.style.color = colorArray[colorIndex];
+      elem.style.backgroundColor = bgColorArray[colorIndex];
+      elem.textContent = 'color[' + colorArray[colorIndex] +
+		'], background color[' + bgColorArray[colorIndex] + ']\n' +
+		elem.textContent;
       colorIndex++;
-      if (colorIndex === fgColors.length) {
+      if (colorIndex === colorArray.length) {
         colorIndex = 0;
       }
     }
@@ -298,6 +306,9 @@
       console.log("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄ Console Logging ▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄");
       researchConsoleLogging()
       console.log("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄");
+      var alertInstance = new ShowAlert();
+      alertInstance.setMessage('OK\n⚪—🟡—🟠—🔴—🟣—🔵—🟢—🟤—⚫');
+	  alertInstance.show();
     }
   </script>
 </head>
@@ -314,6 +325,7 @@
   <div>
     <span class="span-value" id="value">Value: 2</span>
   </div>
+  <hr>
   <div>
     <button onclick="writeToTextArea(); return false;">Write to text area</button>
   </div>
