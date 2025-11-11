@@ -1,270 +1,278 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-  <title>Scripting</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <link rel="icon" href="favicon.ico" />
-  <style type="text/css">
-  .span-value {
-    font-size: 2em;
-	font-weight: bold;
-  }
-  </style>
-  <script>
-     var value = 2;
-     function compute(delta) {
-       value = value + delta;
-       document.getElementById('value').textContent = value;
-       if(value < 2) {
-         document.getElementById('value').style.backgroundColor = 'thistle';
-         document.getElementById('value').style.color = 'black';
-       } else if((value === 2)) {
-         document.getElementById('value').style.backgroundColor = 'palegreen';
-         document.getElementById('value').style.color = 'black';
-       } else {
-         document.getElementById('value').style.backgroundColor = 'white';
-         document.getElementById('value').style.color = 'red';
+    <title>JavaScript Scripting</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="icon" href="favicon.ico"/>
+    <style type="text/css">
+        .span-value {
+          font-size: 2em;
+          font-weight: bold;
+        }
+    </style>
+    <script>
+        var value = 2;
+        document.getElementById('value').style.backgroundColor = 'palegreen';
+        document.getElementById('value').style.color = 'black';
+        function compute(delta) {
+          value = value + delta;
+          document.getElementById('value').textContent = value;
+          if(value < 2) {
+            document.getElementById('value').style.backgroundColor = 'thistle';
+            document.getElementById('value').style.color = 'black';
+          } else if((value === 2)) {
+            document.getElementById('value').style.backgroundColor = 'palegreen';
+            document.getElementById('value').style.color = 'black';
+          } else {
+            document.getElementById('value').style.backgroundColor = 'yellow';
+            document.getElementById('value').style.color = 'red';
+          }
+        }
+        var colors = ['lightpink', 'lightgreen', 'lightblue', 'white'];
+        var index = 0;
+        function display() {
+           var elem = document.getElementById('txt-1');
+           elem.style.backgroundColor = colors[index];
+		   elem.textContent =  colors[index];
+           index++;
+           if(index === colors) {
+               index = 0;
+           }
+        }
        }
-     }
-     var colors = ['lightpink', 'lightgreen', 'lightblue', 'white'];
-	 var index = 0;
-     function display() {
-		var elem = document.getElementById('txt-1');
-		elem.style.backgroundColor = colors[index];
-		index++;
-		
-		displayLogs();
-     }
-	function displayLogs() {
-		console.log("This is the log level");
-		console.info("This is the info level");
-		console.debug("This is the debug level");
-		console.warn("This is the warn level");
-		console.error("This is the error level");
-
-		console.log("No indentation");
-		console.group();
-		console.log("Increased indentation");
-		console.group();
-		console.log("Double increased indentation");
-		console.groupEnd();
-		console.log("Increased indentation");
-		console.groupEnd();
-		console.log("No indentation");
-	}
-
-	function research() {
-	  console.log("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄ Arrays ▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄");
-	  const array = ["🟥 Red", "🟩 Green", "🟦 Blue"];
-	  console.log("arrow function");
-	  array.forEach((element) => console.log("array element[%s]", element));
-	  console.log("anonymous function");
-	  array.forEach(function (element) {
-		console.log("array element[%s]", element);
-	  });
-
-	  console.log("Array with undefined:");
-	  ["1st", undefined, "3rd", null, "5th"].forEach((value, key) =>
-		console.log("\tkey[%s], value[%s]", key, value)
-	  );
-	  console.log("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄ Array & JSON ▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄");
-	  const json = JSON.stringify(["🟧 Orange", "🟨 Yellow", "🟪 Purple"]);
-	  console.log("ARRAY 🠊 JSON,    json%s", json);
-	  console.log("JSON 🠊 ARRAY, array%s", JSON.parse(json));
-
-	  console.log("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄ Sets ▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄");
-	  const set = new Set(["🟥 Red", "🟩 Green", "🟦 Blue"]);
-	  set.forEach((value) => {
-		console.log("\tvalue[%s]", value);
-	  });
-
-	  console.log("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄ Maps ▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄");
-	  const map = new Map([
-		["🟥 Red", "🟧 Orange"],
-		["🟩 Green", "🟨 Yellow"],
-		["🟦 Blue", "🟪 Purple"],
-	  ]);
-	  map.forEach((value, key) => {
-		console.log("\tkey[%s],\tvalue[%s]", key, value);
-	  });
-
-	  console.log("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄ Flat Maps ▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄");
-	  const labels = ["First", "Unknown", "Second", "Third", "Unknown", "Fourth"];
-	  const fromTo = labels
-		.filter((label) => label !== "Unknown")
-		.flatMap((lbl, idx, arr) => {
-		  if (idx === arr.length - 1) return [];
-		  return `${lbl} → ${arr[idx + 1]}`;
-		});
-	  console.log(fromTo.join(" ❌  "));
-
-	  console.log("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄ Closures ▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄");
-	  function report() {
-		function withSquare(square) {
-		  return function (circle) {
-			return `${square} ${circle}`;
-		  };
-		}
-		const withRedSquare = withSquare("🟥");
-		const withGreenSquare = withSquare("🟩");
-		const withBlueSquare = withSquare("🟦");
-		return `${withRedSquare("🔴")} | ${withGreenSquare("🟢")} | ${withBlueSquare(
-		  "🔵"
-		)}`;
-	  }
-	  console.log(report());
-
-	  console.log("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄ Functions, Defaults ▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄");
-	  function withDefaultParameter(param) {
-		if (param === undefined) {
-		  param = "The Default";
-		}
-		return param;
-	  }
-	  console.log(
-		"with default - 1st param[%s], 2nd param[%s], 3rd param[%s], 4th param[%s]",
-		withDefaultParameter(),
-		withDefaultParameter(undefined),
-		withDefaultParameter(""),
-		withDefaultParameter(null)
-	  );
-
-	  console.log("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄ Generators ▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄");
-	  const generatorWrapper = {
-		*generator() {
-		  let index = 0;
-		  while (true) {
-			index++;
-			if (index % 7 !== 0) {
-			  continue;
-			}
-			yield index;
-		  }
-		},
-	  };
-	  const generatorFunction = generatorWrapper.generator();
-	  console.log("generated values array%s", [
-		generatorFunction.next().value,
-		generatorFunction.next().value,
-		generatorFunction.next().value,
-	  ]);
-
-	  console.log("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄ Classes, Generators ▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄");
-	  class ColorCircle {
-		static array = "⚪—🟡—🟠—🔴—🟣—🔵—🟢—🟤—⚫".split("—");
-		static line = "⚫🔵🟤🟢🟠🟣🔴⚪🟡";
-		static getOrdered() {
-		  return ColorCircle.array.join("");
-		}
-		static getSorted() {
-		  return [...ColorCircle.array].sort().join("");
-		}
-		static getRepeated() {
-		  return (ColorCircle.line.concat(" ")).repeat(4);
-		}
-	  }
-	  console.log(
-		"\n%s\n%s\n%s\n",
-		ColorCircle.getRepeated(),
-		ColorCircle.getOrdered(),
-		ColorCircle.getSorted()
-	  );
-
-	  class ColorSquare {
-		constructor(line) {
-		  this.squares = line.split("#");
-		}
-		*generateThreeSquares() {
-		  let index = 0;
-		  while (true) {
-			if (this.squares[index] === undefined) {
-			  break;
-			}
-			yield this.squares[index++];
-		  }
-		}
-	  }
-	  [...new ColorSquare("🟥🟩🟦#🟧🟨🟪#🟫⬛⬜").generateThreeSquares()].forEach(
-		(sq) => console.log("%s", sq)
-	  );
-
-	  console.log("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄ Function Parameters ▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄");
-	  function multiplyParameters(multiplier, ...theArgs) {
-		return theArgs.map((element) => multiplier * element);
-	  }
-	  const multiplyResultArray = multiplyParameters(5, 1, 2, 3);
-	  console.log("multiplied result%s", multiplyResultArray);
-	  const wrapper = {
-		multiplyParameters(multiplier, ...theArgs) {
-		  return theArgs.map((element) => multiplier * element);
-		},
-		sortParameters(...theArgs) {
-		  return theArgs.sort();
-		},
-		accumulateResults(...theArgs) {
-		  return theArgs
-			.filter((n) => n % 2 === 0)
-			.map((n) => n * 1.01)
-			.reduce((a, b) => a + b);
-		},
-	  };
-	  console.log("multiplied result%s", wrapper.multiplyParameters(7, 1, 2, 3));
-	  console.log("sorted result%s", wrapper.sortParameters(4, 2, 5, 3, 1));
-	  console.log("sorted result%s", wrapper.sortParameters(...[9, 7, 8, 6]));
-	  console.log(
-		"accumulated result[%d]",
-		wrapper.accumulateResults(1, 2, 3, 4, 5).toFixed(2)
-	  );
-
-	  console.log("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄ Rounding Number ▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄");
-	  for (const delta of [1, 2, 3, 4, 5, 6, 7, 8, 9]) {
-		const number = 123.45 + 0.001 * delta;
-		console.log("- - - - - delta[%d], number[%d]", delta, number);
-		console.log("'toFixed' %d", number.toFixed(2));
-		console.log(" 'round'  %d", Math.round(Number(number + "e+2")) + "e-2");
-	  }
-
-	  console.log("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄ Date & Time ▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄");
-	  const date = new Date("2000-12-31T13:34:56");// Hour is '13'!
-	  const dateUTC = Date.UTC(2000, 11, 31, 12, 34, 56);// Month is '11'!
-	  const dateTimeFormat = new Intl.DateTimeFormat("en-US", {
-		hourCycle: "h24",
-		timeZone: "UTC",
-		timeStyle: "medium",
-		dateStyle: "medium",
-	  });
-	  console.log(
-		"date - year[%d], month[%d], day[%d], hour[%d], minutes[%d], seconds[%d]",
-		date.getFullYear(),
-		date.getMonth() + 1,
-		date.getDate(),
-		date.getHours(),
-		date.getMinutes(),
-		date.getSeconds()
-	  );
-	  console.log("Rounded     date[%s]", dateTimeFormat.format(date));
-	  console.log("Rounded UTC date[%s]", dateTimeFormat.format(dateUTC));
-	  console.log("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄");
-	}
-  </script>
+   
+       function research() {
+           console.log("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄ Arrays ▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄");
+           const array = ["🟥 Red", "🟩 Green", "🟦 Blue"];
+           console.log("arrow function");
+           array.forEach((element) => console.log("array element[%s]", element));
+           console.log("anonymous function");
+           array.forEach(function (element) {
+           console.log("array element[%s]", element);
+           });
+   
+           console.log("Array with undefined:");
+           ["1st", undefined, "3rd", null, "5th"].forEach((value, key) =>
+           console.log("\tkey[%s], value[%s]", key, value)
+           );
+           console.log("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄ Array & JSON ▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄");
+           const json = JSON.stringify(["🟧 Orange", "🟨 Yellow", "🟪 Purple"]);
+           console.log("ARRAY 🠊 JSON,    json%s", json);
+           console.log("JSON 🠊 ARRAY, array%s", JSON.parse(json));
+   
+           console.log("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄ Sets ▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄");
+           const set = new Set(["🟥 Red", "🟩 Green", "🟦 Blue"]);
+           set.forEach((value) => {
+           console.log("\tvalue[%s]", value);
+           });
+   
+           console.log("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄ Maps ▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄");
+           const map = new Map([
+           ["🟥 Red", "🟧 Orange"],
+           ["🟩 Green", "🟨 Yellow"],
+           ["🟦 Blue", "🟪 Purple"],
+           ]);
+           map.forEach((value, key) => {
+           console.log("\tkey[%s],\tvalue[%s]", key, value);
+           });
+   
+           console.log("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄ Flat Maps ▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄");
+           const labels = ["First", "Unknown", "Second", "Third", "Unknown", "Fourth"];
+           const fromTo = labels
+           .filter((label) => label !== "Unknown")
+           .flatMap((lbl, idx, arr) => {
+             if (idx === arr.length - 1) return [];
+             return `${lbl} → ${arr[idx + 1]}`;
+           });
+           console.log(fromTo.join(" ❌  "));
+   
+           console.log("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄ Closures ▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄");
+           function report() {
+           function withSquare(square) {
+             return function (circle) {
+               return `${square} ${circle}`;
+             };
+           }
+           const withRedSquare = withSquare("🟥");
+           const withGreenSquare = withSquare("🟩");
+           const withBlueSquare = withSquare("🟦");
+           return `${withRedSquare("🔴")} | ${withGreenSquare("🟢")} | ${withBlueSquare(
+             "🔵"
+           )}`;
+           }
+           console.log(report());
+   
+           console.log("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄ Functions, Defaults ▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄");
+           function withDefaultParameter(param) {
+           if (param === undefined) {
+             param = "The Default";
+           }
+           return param;
+           }
+           console.log(
+           "with default - 1st param[%s], 2nd param[%s], 3rd param[%s], 4th param[%s]",
+           withDefaultParameter(),
+           withDefaultParameter(undefined),
+           withDefaultParameter(""),
+           withDefaultParameter(null)
+           );
+   
+           console.log("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄ Generators ▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄");
+           const generatorWrapper = {
+           *generator() {
+             let index = 0;
+             while (true) {
+               index++;
+               if (index % 7 !== 0) {
+                 continue;
+               }
+               yield index;
+             }
+           },
+           };
+           const generatorFunction = generatorWrapper.generator();
+           console.log("generated values array%s", [
+           generatorFunction.next().value,
+           generatorFunction.next().value,
+           generatorFunction.next().value,
+           ]);
+   
+           console.log("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄ Classes, Generators ▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄");
+           class ColorCircle {
+           static array = "⚪—🟡—🟠—🔴—🟣—🔵—🟢—🟤—⚫".split("—");
+           static line = "⚫🔵🟤🟢🟠🟣🔴⚪🟡";
+           static getOrdered() {
+             return ColorCircle.array.join("");
+           }
+           static getSorted() {
+             return [...ColorCircle.array].sort().join("");
+           }
+           static getRepeated() {
+             return (ColorCircle.line.concat(" ")).repeat(4);
+           }
+           }
+           console.log(
+           "\n%s\n%s\n%s\n",
+           ColorCircle.getRepeated(),
+           ColorCircle.getOrdered(),
+           ColorCircle.getSorted()
+           );
+   
+           class ColorSquare {
+           constructor(line) {
+             this.squares = line.split("#");
+           }
+           *generateThreeSquares() {
+             let index = 0;
+             while (true) {
+               if (this.squares[index] === undefined) {
+                 break;
+               }
+               yield this.squares[index++];
+             }
+           }
+           }
+           [...new ColorSquare("🟥🟩🟦#🟧🟨🟪#🟫⬛⬜").generateThreeSquares()].forEach(
+           (sq) => console.log("%s", sq)
+           );
+   
+           console.log("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄ Function Parameters ▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄");
+           function multiplyParameters(multiplier, ...theArgs) {
+               return theArgs.map((element) => multiplier * element);
+           }
+           const multiplyResultArray = multiplyParameters(5, 1, 2, 3);
+           console.log("multiplied result%s", multiplyResultArray);
+           const wrapper = {
+           multiplyParameters(multiplier, ...theArgs) {
+             return theArgs.map((element) => multiplier * element);
+           },
+           sortParameters(...theArgs) {
+             return theArgs.sort();
+           },
+           accumulateResults(...theArgs) {
+             return theArgs
+               .filter((n) => n % 2 === 0)
+               .map((n) => n * 1.01)
+               .reduce((a, b) => a + b);
+           },
+           };
+           console.log("multiplied result%s", wrapper.multiplyParameters(7, 1, 2, 3));
+           console.log("sorted result%s", wrapper.sortParameters(4, 2, 5, 3, 1));
+           console.log("sorted result%s", wrapper.sortParameters(...[9, 7, 8, 6]));
+           console.log(
+           "accumulated result[%d]",
+           wrapper.accumulateResults(1, 2, 3, 4, 5).toFixed(2)
+           );
+   
+           console.log("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄ Rounding Number ▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄");
+           for (const delta of [1, 2, 3, 4, 5, 6, 7, 8, 9]) {
+           const number = 123.45 + 0.001 * delta;
+           console.log("- - - - - delta[%d], number[%d]", delta, number);
+           console.log("'toFixed' %d", number.toFixed(2));
+           console.log(" 'round'  %d", Math.round(Number(number + "e+2")) + "e-2");
+           }
+   
+           console.log("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄ Date & Time ▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄");
+           const date = new Date("2000-12-31T13:34:56");// Hour is '13'!
+           const dateUTC = Date.UTC(2000, 11, 31, 12, 34, 56);// Month is '11'!
+           const dateTimeFormat = new Intl.DateTimeFormat("en-US", {
+           hourCycle: "h24",
+           timeZone: "UTC",
+           timeStyle: "medium",
+           dateStyle: "medium",
+           });
+           console.log(
+           "date - year[%d], month[%d], day[%d], hour[%d], minutes[%d], seconds[%d]",
+           date.getFullYear(),
+           date.getMonth() + 1,
+           date.getDate(),
+           date.getHours(),
+           date.getMinutes(),
+           date.getSeconds()
+           );
+           console.log("Rounded     date[%s]", dateTimeFormat.format(date));
+           console.log("Rounded UTC date[%s]", dateTimeFormat.format(dateUTC));
+           console.log("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄ Display Logs ▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄");
+           function displayLogs() {
+               console.log("This is the log level");
+               console.info("This is the info level");
+               console.debug("This is the debug level");
+               console.warn("This is the warn level");
+               console.error("This is the error level");
+   
+               console.log("No indentation");
+               console.group();
+               console.log("Increased indentation");
+               console.group();
+               console.log("Double increased indentation");
+               console.groupEnd();
+               console.log("Increased indentation");
+               console.groupEnd();
+               console.log("No indentation");
+           }
+           displayLogs();
+           console.log("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄");
+       }
+    </script>
 </head>
 <body>
-  <h3>Scripting</h3>
-  <p>
+<h3>JavaScript Scripting</h3>
+<p>
     <a href="?x=4" onclick="compute(-1); return false;">➖ Subtract</a>&nbsp;
     <a href="?x=6" onclick="compute(1); return false;">➕ Add </a></p>&nbsp;
-    Value: <span class="span-value" id="value">2</span>
-  </p>
-  <p>
-  <a href="?x=4" onclick="research(); return false;">Research</a>
-  </p>
-  <p>
-  <a href="?x=4" onclick="display(); return false;">Display</a>
-  </p>
-  <textarea id="txt-1" name="txt-1" rows="25" cols="120" ></textarea>
-  <hr>
-  <p>
-	<a href="https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-history-pushstate">HTML Living Standard</a>
-  </p>
+Value: <span class="span-value" id="value">2</span>
+</p>
+<p>
+    <a href="?x=4" onclick="research(); return false;">Research</a>
+</p>
+<p>
+    <a href="?x=4" onclick="display(); return false;">Display</a>
+</p>
+<textarea id="txt-1" name="txt-1" rows="20" cols="120"></textarea>
+<hr>
+<p>
+    <a href="https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-history-pushstate">HTML Living
+        Standard</a>
+</p>
 </body>
 </html>
