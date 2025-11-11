@@ -4,7 +4,7 @@
 <head>
   <title>JavaScript Scripting</title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <link rel="icon" href="favicon_reversed.ico" />
+  <link rel="icon" href="images/favicon_reversed.ico" />
   <style type="text/css">
     .span-value {
       color: black;
@@ -16,10 +16,8 @@
   <script>
     function compute(delta) {
       var valueElement = document.getElementById('value');
-      // Extract the number part after "Value: "
       var value = parseInt(valueElement.textContent.replace('Value: ', ''), 10);
       value = value + delta;
-      // Update with new value prefixed by "Value: "
       valueElement.textContent = 'Value: ' + value;
       if (value < 2) {
         valueElement.style.color = 'black';
@@ -238,9 +236,9 @@
 
     function researchConsoleLogging() {
       console.log("No indentation");
-      console.group();
+      console.group("First Group");
       console.log("Increased indentation");
-      console.group();
+      console.group("Second Group");
       console.log("Double increased indentation");
       console.groupEnd();
       console.log("Increased indentation");
@@ -298,7 +296,7 @@
     <a href="?x=6" onclick="compute(1); return false;">➕ Add </a>
   </p>
   <p>
-    Value: <span class="span-value" id="value">2</span>
+    <span class="span-value" id="value">Value: 2</span>
   </p>
   <p>
     <a href="?x=4" onclick="display(); return false;">Display</a>
