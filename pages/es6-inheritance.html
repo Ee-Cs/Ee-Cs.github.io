@@ -1,0 +1,136 @@
+﻿<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <style>
+    button {
+      font-size: 150%;
+      margin-right: 8px;
+      margin-bottom: 16px;
+    }
+
+    textarea {
+      width: 100%;
+      height: 600px;
+      font-family: monospace;
+      font-size: 1em;
+      box-sizing: border-box;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+
+<body>
+  <h3>
+    Modern ES6 class inheritance example demonstrating base and derived classes.
+  </h3>
+
+  <div>
+    <button id="createBtn">Create Instances</button>
+    <button id="inheritBtn">Test Inheritance</button>
+    <button id="clearBtn">Clear</button>
+    <button id="alertBtn">Show Alert</button>
+  </div>
+
+  <textarea id="txt1" readonly></textarea>
+
+  <script>
+    // Base class
+    class AAA {
+      constructor() {
+        this.name = 'a';
+        this.x = 'a-x';
+        this.y = undefined;
+      }
+      getInfo() {
+        return `name: ${this.name}, x: ${this.x}, y: ${this.y ?? 'undefined'}`;
+      }
+    }
+
+    // Derived class from AAA
+    class BBB extends AAA {
+      constructor() {
+        super();
+        this.name = 'b';
+        this.y = 'b-y';
+      }
+      getInfo() {
+        return `name: ${this.name}, x: ${this.x}, y: ${this.y}`;
+      }
+    }
+
+    // Derived class from BBB
+    class CCC extends BBB {
+      constructor() {
+        super();
+        this.name = 'c';
+      }
+      getInfo() {
+        return `name: ${this.name}, x: ${this.x}, y: ${this.y}`;
+      }
+    }
+
+    // Alert class with configurable message
+    class ShowAlert {
+      constructor(message = 'initial alert') {
+        this.message = message;
+      }
+      show() {
+        alert(this.message);
+      }
+      setMessage(msg) {
+        this.message = msg;
+      }
+    }
+
+    let a, b, c;
+    let alertInstance = new ShowAlert();
+
+    const txtEl = document.getElementById('txt1');
+
+    function writeText() {
+      const msg = `a: ${a.getInfo()}
+b: ${b.getInfo()}
+c: ${c.getInfo()}
+- - - - -\n`;
+      txtEl.value += msg;
+      console.log(msg);
+    }
+
+    function createInstances() {
+      a = new AAA();
+      b = new BBB();
+      c = new CCC();
+      writeText();
+      alertInstance.setMessage('after CreateInstances');
+    }
+
+    function testInheritance() {
+      // Change some properties to simulate behavior changes
+      a.x = 'a-x modified';
+      b.y = 'b-y modified';
+      c.x = 'c-x overridden';
+      c.y = 'c-y overridden';
+
+      writeText();
+      alertInstance.setMessage('after TestInheritance');
+    }
+
+    function clearText() {
+      txtEl.value = '';
+      txtEl.style.backgroundColor = 'white';
+      alertInstance.setMessage('initial alert');
+    }
+
+    // Event bindings
+    document.getElementById('createBtn').onclick = createInstances;
+    document.getElementById('inheritBtn').onclick = testInheritance;
+    document.getElementById('clearBtn').onclick = clearText;
+    document.getElementById('alertBtn').onclick = () => alertInstance.show();
+
+    // Initialize textarea blank
+    clearText();
+  </script>
+</body>
+
+</html>

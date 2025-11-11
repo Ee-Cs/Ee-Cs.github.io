@@ -31,19 +31,6 @@
       }
     }
 
-    var index = 0;
-
-    function display() {
-      var colors = ['lightpink', 'lightgreen', 'lightblue', 'white'];
-      var elem = document.getElementById('txt-1');
-      elem.style.backgroundColor = colors[index];
-      elem.textContent = colors[index];
-      index++;
-      if (index === colors.length) {
-        index = 0;
-      }
-    }
-
     function researchArrays() {
       const array = ["🟥 Red", "🟩 Green", "🟦 Blue"];
       console.log("arrow function");
@@ -298,10 +285,6 @@
   <p>
     <span class="span-value" id="value">Value: 2</span>
   </p>
-  <p>
-    <a href="?x=4" onclick="display(); return false;">Display</a>
-  </p>
-  <textarea id="txt-1" name="txt-1" rows="10" cols="160"></textarea>
   <hr>
   <p>
     <a href="https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-history-pushstate">HTML Living

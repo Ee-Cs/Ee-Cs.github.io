@@ -24,6 +24,7 @@
 | |
 | --- |
 | [**scripting.html**](https://ee-cs.github.io/pages/scripting.html) |
+| [**es6-inheritance.html**](https://ee-cs.github.io/pages/es6-inheritance.html) |
 | [**tables-and-emojis.html**](https://ee-cs.github.io/pages/tables-and-emojis.html) |
 | [**font-families.html**](https://ee-cs.github.io/pages/font-families.html) |
 | [**tree.html**](https://ee-cs.github.io/pages/tree.html) |
