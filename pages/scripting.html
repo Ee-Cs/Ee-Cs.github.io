@@ -13,8 +13,8 @@
     }
 
     textarea {
-      width: 25%;
-      height: 60px;
+      width: 33%;
+      height: 150px;
       font-family: monospace;
       font-size: 1em;
       box-sizing: border-box;
@@ -50,12 +50,16 @@
     function writeToTextArea() {
       var colorArray = [
 		'Red', 'Green', 'Blue',
-		'Cyan', 'Magenta', 'Yellow',
-		'Orange', 'Black'];
+		'Cyan', 'Magenta', 'Yellow', 'Orange',
+		'Black', 'Black', 'Black', 
+		'Black', 'Black', 'Black',
+		'Black'];
       var bgColorArray = [
 		'MistyRose', 'HoneyDew', 'AliceBlue',
-		'Black', 'Lavender', 'Black',
-		'Black', 'White'];
+		'Black', 'Black', 'Black', 'Black',
+		'MistyRose', 'HoneyDew', 'AliceBlue',
+		'LightCyan', 'Lavender', 'LightYellow', 'Moccasin',
+		'White'];
       var elem = document.getElementById('txt-1');
       elem.style.color = colorArray[colorIndex];
       elem.style.backgroundColor = bgColorArray[colorIndex];
@@ -306,9 +310,7 @@
       console.log("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄ Console Logging ▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄");
       researchConsoleLogging()
       console.log("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄");
-      var alertInstance = new ShowAlert();
-      alertInstance.setMessage('OK\n⚪—🟡—🟠—🔴—🟣—🔵—🟢—🟤—⚫');
-	  alertInstance.show();
+      alert('OK\n⚪—🟡—🟠—🔴—🟣—🔵—🟢—🟤—⚫');
     }
   </script>
 </head>
