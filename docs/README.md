@@ -4,7 +4,7 @@
 ---
 
 <details>
-<summary>⭕ Files</summary>
+<summary>⭕ Markdown Files</summary>
 
 | |
 | --- |
@@ -19,7 +19,7 @@
 </details>
 
 <details>
-<summary>⭕ Pages</summary>
+<summary>⭕ HTML Pages</summary>
 
 | |
 | --- |
@@ -29,6 +29,7 @@
 | [**tree.html**](https://ee-cs.github.io/pages/tree.html) |
 | [**small-icons.html**](https://ee-cs.github.io/pages/small-icons/small-icons.html) |
            
+---
 </details>
 
 ---
