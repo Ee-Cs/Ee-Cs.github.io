@@ -1,9 +1,9 @@
-(State Diagram Syntax)[https://mermaid.js.org/syntax/stateDiagram.html]
+[State Diagram Syntax](https://mermaid.js.org/syntax/stateDiagram.html)
 
 
 ```mermaid
 ---
-title: Mission State Diagram
+title: State Diagram Example
 ---
 stateDiagram
 direction TB
@@ -13,7 +13,7 @@ state "Scheduled" as SCH
 state CHO <<choice>>
 state "In Progress" as PRG
 note right of PRG
-  Space mission in progress.
+  It is in progress.
 end note
 state "Pending" as PND
 state "Ended" as END
@@ -21,11 +21,11 @@ state "Ended" as END
 %% Transitions
 [*] --> SCH:::schedClass
 SCH --> CHO
-CHO --> PRG:::progClass : rockets assigned
-CHO --> END:::endClass : mission cancelled
-PRG --> PND:::pendClass : rocket in repair
-PND --> PRG : rocket fixed
-PRG --> END : rockets unassigned
+CHO --> PRG:::progClass : assigned
+CHO --> END:::endClass : cancelled
+PRG --> PND:::pendClass : in repair
+PND --> PRG : fixed
+PRG --> END : unassigned
 END --> [*]
 
 %% Style definitions

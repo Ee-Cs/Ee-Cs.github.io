@@ -1,4 +1,4 @@
-(Radar Diagram Syntax)[https://mermaid.js.org/syntax/radar.html]
+[Radar Diagram Syntax](https://mermaid.js.org/syntax/radar.html)
 
 ```mermaid
 ---

@@ -1,4 +1,4 @@
-(Flowchart Diagram Syntax)[https://mermaid.js.org/syntax/flowchart.html]
+[Flowchart Diagram Syntax](https://mermaid.js.org/syntax/flowchart.html)
 
 ```mermaid
 ---

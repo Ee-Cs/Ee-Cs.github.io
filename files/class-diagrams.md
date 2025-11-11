@@ -1,4 +1,4 @@
-(Class Diagram Syntax)[https://mermaid.js.org/syntax/classDiagram.html]
+[Class Diagram Syntax](https://mermaid.js.org/syntax/classDiagram.html)
 
 ```mermaid
 ---
@@ -9,7 +9,7 @@ class Aaa {
   +number id
   +string name
   +AaaStatus aaaStatus
-  +Bbb[] bbbArr
+  +Bbb[] bbbArray
 }
 
 class Bbb {
@@ -21,17 +21,17 @@ class Bbb {
 
 class AaaStatus {
   <<enumeration>>
-  🟣 +A1 = "A One"
-  🟡 +A2 = "A Two"
+  🔴 +A1 = "Aaa Status One"
+  🟢 +A2 = "Aaa Status Two"
 }
 
 class BbbStatus {
   <<enumeration>>
-  🟣 +B1 = "B One"
-  🟡 +B2 = "B Two"
+  🟣 +B1 = "Bbb Status One"
+  🟡 +B2 = "Bbb Status Two"
 }
 
-Aaa "1" o-- "*" Bbb : bbbArr
+Aaa "1" o-- "*" Bbb : bbbArray
 AaaStatus <|.. Aaa : aaaStatus
 BbbStatus <|.. Bbb : bbbStatus
 ```
