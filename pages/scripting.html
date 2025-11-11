@@ -7,26 +7,26 @@
   <link rel="icon" href="favicon_reversed.ico" />
   <style type="text/css">
     .span-value {
+      color: black;
+      background-color: palegreen;
       font-size: 2em;
       font-weight: bold;
     }
   </style>
   <script>
     var value = 2;
-    document.getElementById('value').style.backgroundColor = 'palegreen';
-    document.getElementById('value').style.color = 'black';
     function compute(delta) {
       value = value + delta;
       document.getElementById('value').textContent = value;
       if (value < 2) {
+        document.getElementById('value').style.color = 'black';
         document.getElementById('value').style.backgroundColor = 'thistle';
-        document.getElementById('value').style.color = 'black';
       } else if ((value === 2)) {
-        document.getElementById('value').style.backgroundColor = 'palegreen';
         document.getElementById('value').style.color = 'black';
+        document.getElementById('value').style.backgroundColor = 'palegreen';
       } else {
-        document.getElementById('value').style.backgroundColor = 'yellow';
         document.getElementById('value').style.color = 'red';
+        document.getElementById('value').style.backgroundColor = 'yellow';
       }
     }
     var colors = ['lightpink', 'lightgreen', 'lightblue', 'white'];
@@ -40,9 +40,7 @@
         index = 0;
       }
     }
-
-    function research() {
-      console.log("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄ Arrays ▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄");
+    function researchArrays() {
       const array = ["🟥 Red", "🟩 Green", "🟦 Blue"];
       console.log("arrow function");
       array.forEach((element) => console.log("array element[%s]", element));
@@ -55,18 +53,19 @@
       ["1st", undefined, "3rd", null, "5th"].forEach((value, key) =>
         console.log("\tkey[%s], value[%s]", key, value)
       );
-      console.log("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄ Array & JSON ▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄");
+    }
+    function researchArraysAndJson() {
       const json = JSON.stringify(["🟧 Orange", "🟨 Yellow", "🟪 Purple"]);
       console.log("ARRAY 🠊 JSON,    json%s", json);
       console.log("JSON 🠊 ARRAY, array%s", JSON.parse(json));
-
-      console.log("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄ Sets ▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄");
+    }
+    function researchSets() {
       const set = new Set(["🟥 Red", "🟩 Green", "🟦 Blue"]);
       set.forEach((value) => {
         console.log("\tvalue[%s]", value);
       });
-
-      console.log("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄ Maps ▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄");
+    }
+    function researchMaps() {
       const map = new Map([
         ["🟥 Red", "🟧 Orange"],
         ["🟩 Green", "🟨 Yellow"],
@@ -75,8 +74,8 @@
       map.forEach((value, key) => {
         console.log("\tkey[%s],\tvalue[%s]", key, value);
       });
-
-      console.log("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄ Flat Maps ▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄");
+    }
+    function researchFlatMaps() {
       const labels = ["First", "Unknown", "Second", "Third", "Unknown", "Fourth"];
       const fromTo = labels
         .filter((label) => label !== "Unknown")
@@ -86,38 +85,27 @@
         });
       console.log(fromTo.join(" ❌  "));
 
-      console.log("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄ Closures ▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄");
-      function report() {
-        function withSquare(square) {
-          return function (circle) {
-            return `${square} ${circle}`;
-          };
-        }
-        const withRedSquare = withSquare("🟥");
-        const withGreenSquare = withSquare("🟩");
-        const withBlueSquare = withSquare("🟦");
-        return `${withRedSquare("🔴")} | ${withGreenSquare("🟢")} | ${withBlueSquare(
-          "🔵"
-        )}`;
+    }
+    function researchClosure() {
+      function withSquare(square) {
+        return function (circle) {
+          return `${square} ${circle}`;
+        };
       }
-      console.log(report());
-
-      console.log("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄ Functions, Defaults ▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄");
-      function withDefaultParameter(param) {
-        if (param === undefined) {
-          param = "The Default";
-        }
-        return param;
+      const withRedSquare = withSquare("🟥");
+      const withGreenSquare = withSquare("🟩");
+      const withBlueSquare = withSquare("🟦");
+      return `${withRedSquare("🔴")} | ${withGreenSquare("🟢")} | ${withBlueSquare(
+        "🔵"
+      )}`;
+    }
+    function researchDefaultParameter(param) {
+      if (param === undefined) {
+        param = "The Default";
       }
-      console.log(
-        "with default - 1st param[%s], 2nd param[%s], 3rd param[%s], 4th param[%s]",
-        withDefaultParameter(),
-        withDefaultParameter(undefined),
-        withDefaultParameter(""),
-        withDefaultParameter(null)
-      );
-
-      console.log("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄ Generators ▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄");
+      return param;
+    }
+    function researchGenerators() {
       const generatorWrapper = {
         *generator() {
           let index = 0;
@@ -136,8 +124,8 @@
         generatorFunction.next().value,
         generatorFunction.next().value,
       ]);
-
-      console.log("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄ Classes, Generators ▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄");
+    }
+    function researchClassesAndGenerators() {
       class ColorCircle {
         static array = "⚪—🟡—🟠—🔴—🟣—🔵—🟢—🟤—⚫".split("—");
         static line = "⚫🔵🟤🟢🟠🟣🔴⚪🟡";
@@ -175,8 +163,8 @@
       [...new ColorSquare("🟥🟩🟦#🟧🟨🟪#🟫⬛⬜").generateThreeSquares()].forEach(
         (sq) => console.log("%s", sq)
       );
-
-      console.log("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄ Function Parameters ▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄");
+    }
+    function researchFunctionParameters() {
       function multiplyParameters(multiplier, ...theArgs) {
         return theArgs.map((element) => multiplier * element);
       }
@@ -203,16 +191,16 @@
         "accumulated result[%d]",
         wrapper.accumulateResults(1, 2, 3, 4, 5).toFixed(2)
       );
-
-      console.log("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄ Rounding Number ▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄");
+    }
+    function researchRoundingNumbers() {
       for (const delta of [1, 2, 3, 4, 5, 6, 7, 8, 9]) {
         const number = 123.45 + 0.001 * delta;
         console.log("- - - - - delta[%d], number[%d]", delta, number);
         console.log("'toFixed' %d", number.toFixed(2));
         console.log(" 'round'  %d", Math.round(Number(number + "e+2")) + "e-2");
       }
-
-      console.log("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄ Date & Time ▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄");
+    }
+    function researchDateAndTime() {
       const date = new Date("2000-12-31T13:34:56");// Hour is '13'!
       const dateUTC = Date.UTC(2000, 11, 31, 12, 34, 56);// Month is '11'!
       const dateTimeFormat = new Intl.DateTimeFormat("en-US", {
@@ -232,25 +220,54 @@
       );
       console.log("Rounded     date[%s]", dateTimeFormat.format(date));
       console.log("Rounded UTC date[%s]", dateTimeFormat.format(dateUTC));
-      console.log("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄ Display Logs ▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄");
-      function displayLogs() {
-        console.log("This is the log level");
-        console.info("This is the info level");
-        console.debug("This is the debug level");
-        console.warn("This is the warn level");
-        console.error("This is the error level");
+    }
+    function researchConsoleLogging() {
+      console.log("This is the log level");
+      console.info("This is the info level");
+      console.debug("This is the debug level");
+      console.warn("This is the warn level");
+      console.error("This is the error level");
 
-        console.log("No indentation");
-        console.group();
-        console.log("Increased indentation");
-        console.group();
-        console.log("Double increased indentation");
-        console.groupEnd();
-        console.log("Increased indentation");
-        console.groupEnd();
-        console.log("No indentation");
-      }
-      displayLogs();
+      console.log("No indentation");
+      console.group();
+      console.log("Increased indentation");
+      console.group();
+      console.log("Double increased indentation");
+      console.groupEnd();
+      console.log("Increased indentation");
+      console.groupEnd();
+      console.log("No indentation");
+    }
+    function research() {
+      console.log("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄ Arrays ▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄");
+      researchArrays();
+      console.log("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄ Array & JSON ▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄");
+      researchArraysAndJson();
+      console.log("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄ Sets ▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄");
+      researchSets();
+      console.log("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄ Maps ▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄");
+      researchMaps();
+      console.log("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄ Flat Maps ▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄");
+      researchFlatMaps();
+      console.log("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄ Closures ▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄");
+      console.log(researchClosure());
+      console.log("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄ Functions, Defaults ▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄");
+      console.log("with default - 1st param[%s], 2nd param[%s], 3rd param[%s], 4th param[%s]",
+        researchDefaultParameter(), researchDefaultParameter(undefined),
+        researchDefaultParameter(""), researchDefaultParameter(null)
+      );
+      console.log("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄ Generators ▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄");
+      researchGenerators();
+      console.log("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄ Classes, Generators ▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄");
+      researchClassesAndGenerators();
+      console.log("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄ Function Parameters ▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄");
+      researchFunctionParameters();
+      console.log("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄ Rounding Numbers ▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄");
+      researchRoundingNumbers();
+      console.log("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄ Date & Time ▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄");
+      researchDateAndTime();
+      console.log("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄ Console Logging ▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄");
+      researchConsoleLogging()
       console.log("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄");
     }
   </script>
