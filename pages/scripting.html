@@ -304,22 +304,20 @@
 
 <body>
   <h3>JavaScript Scripting</h3>
-  <p>
-    <a href="?x=4" onclick="researchScripting(); return false;">Research Scripting</a>
-  </p>
-  <p>
-    <a href="?x=4" onclick="compute(-1); return false;">➖ Subtract</a>&nbsp;
-    <a href="?x=6" onclick="compute(1); return false;">➕ Add </a>
-  </p>
-  <p>
+  <div>
+    <button onclick="researchScripting(); return false;">Research Scripting</button>
+  </div>
+  <div>
+    <button onclick="compute(-1); return false;">➖ Subtract</button>&nbsp;
+    <button onclick="compute(1); return false;">➕ Add</button>
+  </div>
+  <div>
     <span class="span-value" id="value">Value: 2</span>
-  </p>
-  <p>
+  </div>
   <div>
     <button onclick="writeToTextArea(); return false;">Write to text area</button>
   </div>
   <textarea id="txt-1" name="txt-1" readonly></textarea>  
-  </p>
   <hr>
   <p>
     <a href="https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-history-pushstate">HTML Living
