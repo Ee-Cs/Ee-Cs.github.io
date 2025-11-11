@@ -2,7 +2,7 @@
 
 ```mermaid
 ---
-title: Example
+title: Flowchart Diagram Example
 ---
 flowchart LR
   HOME(Home):::orangeBox
@@ -10,15 +10,18 @@ flowchart LR
   B(Bbbb):::greenBox
   C(Cccc):::cyanBox
   D(Dddd):::yellowBox
+  E((Eee)):::brownBox
   CLI("Client")
   SRV("External<br>Server")
 %% Flows
   subgraph Server
-    subgraph "Example"
+    subgraph "Application"
       HOME --> A
       HOME --> C
       A --> B
       C --> D
+      B <.-> E
+      D <.-> E	  
     end
   end
 
@@ -31,4 +34,5 @@ flowchart LR
   classDef cyanBox fill: #00ffff, stroke: #000, stroke-width: 2px
   classDef yellowBox fill: #ffff00, stroke: #000, stroke-width: 2px
   classDef orangeBox  fill: #ffa500,stroke: #000, stroke-width:2px
+  classDef brownBox  fill: peru,stroke: #000, stroke-width:2px
 ```
