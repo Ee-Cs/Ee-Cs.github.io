@@ -13,6 +13,7 @@
 | [**emojis.md**](../files/emojis.md) |
 | [**fenced-code-blocks.md**](../files/fenced-code-blocks.md) |
 | [**flowchart-diagrams.md**](../files/flowchart-diagrams.md) |
+| [**sequence-diagrams.md**](../files/sequence-diagrams.md) |
 | [**class-diagrams.md**](../files/class-diagrams.md) |
 | [**state-diagrams.md**](../files/state-diagrams.md) |
 | [**radar-diagrams.md**](../files/radar-diagrams.md) |
