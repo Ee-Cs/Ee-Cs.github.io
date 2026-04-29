@@ -28,6 +28,7 @@ graph LR
 ```mermaid
 flowchart TB
 subgraph a
+    direction TB
     yellow:::yellow
     gold:::gold
     orange:::orange
@@ -35,6 +36,7 @@ subgraph a
     salmon:::salmon
 end
 subgraph b
+    direction TB
     pink:::pink
     red:::red
     magenta:::magenta
@@ -42,6 +44,7 @@ subgraph b
     blue:::blue
 end
 subgraph c
+    direction TB
     cyan:::cyan
     lime:::lime
     green:::green
@@ -49,6 +52,7 @@ subgraph c
     sienna:::sienna
 end
 subgraph d
+    direction TB
     brown:::brown
     chocolate:::chocolate
     redBrown:::redBrown
