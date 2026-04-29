@@ -1,6 +1,6 @@
 # Fill and Stroke Colors
 
-```mermaid
+```mermaid flowchart
     lightgray:::lightgray
     lavender:::lavender
     aliceblue:::aliceblue
@@ -25,7 +25,7 @@
 ---
 
 ```mermaid
-flowchart LR
+flowchart
     yellow:::yellow
     gold:::gold
     orange:::orange
