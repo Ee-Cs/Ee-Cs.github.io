@@ -1,22 +1,16 @@
 # Fill and Stroke Colors
 
 ```mermaid
----
-  config:
-    class:
-      hideEmptyMembersBox: true
----
-classDiagram
-    direction LR
-    class lightgray:::lightgray { }
-    class lavender:::lavender { }
-    class aliceblue:::aliceblue { }
-    class lightcyan:::lightcyan { }
-    class honeydew:::honeydew { }
-    class lightyellow:::lightyellow { }
-    class cornsilk:::cornsilk { }
-    class bisque:::bisque { }
-    class mistyrose:::mistyrose { }
+flowchart LR
+    lightgray:::lightgray
+    lavender:::lavender
+    aliceblue:::aliceblue
+    lightcyan:::lightcyan
+    honeydew:::honeydew
+    lightyellow:::lightyellow
+    cornsilk:::cornsilk
+    bisque:::bisque
+    mistyrose:::mistyrose
 %% Styles
     classDef aliceblue fill:aliceblue,stroke:black,stroke-width:1px
     classDef bisque fill:bisque,stroke:black,stroke-width:1px
@@ -28,6 +22,7 @@ classDiagram
     classDef lightyellow fill:lightyellow,stroke:black,stroke-width:1px
     classDef mistyrose fill:mistyrose,stroke:black,stroke-width:1px
 ```
+
 ---
 
 ```mermaid
