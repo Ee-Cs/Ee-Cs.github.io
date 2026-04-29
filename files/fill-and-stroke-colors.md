@@ -27,7 +27,7 @@ graph LR
 
 ```mermaid
 flowchart LR
-subgraph
+subgraph A
     yellow:::yellow
     gold:::gold
     orange:::orange
@@ -38,7 +38,7 @@ subgraph
     magenta:::magenta
     violet:::violet
 end
-subgraph
+subgraph B
     blue:::blue
     cyan:::cyan
     lime:::lime
