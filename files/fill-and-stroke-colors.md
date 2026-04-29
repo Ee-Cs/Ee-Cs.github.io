@@ -26,7 +26,7 @@ graph LR
 ---
 
 ```mermaid
-flowchart LR
+flowchart TB
 subgraph a
     yellow:::yellow
     gold:::gold
