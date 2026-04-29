@@ -1,7 +1,7 @@
 # Fill and Stroke Colors
 
 ```mermaid
-flowchart
+graph
     lightgray:::lightgray
     lavender:::lavender
     aliceblue:::aliceblue
