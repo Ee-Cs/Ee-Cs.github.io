@@ -32,26 +32,24 @@ subgraph a
     gold:::gold
     orange:::orange
     orangeDark:::orangeDark
+    salmon:::salmon
 end
 subgraph b
-    salmon:::salmon
     pink:::pink
     red:::red
     magenta:::magenta
-end
-subgraph c
     violet:::violet
     blue:::blue
+end
+subgraph c
     cyan:::cyan
     lime:::lime
-end
-subgraph d
     green:::green
     olive:::olive
     sienna:::sienna
-    brown:::brown
 end
-subgraph e
+subgraph d
+    brown:::brown
     chocolate:::chocolate
     redBrown:::redBrown
 end
