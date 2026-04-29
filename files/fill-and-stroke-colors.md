@@ -26,7 +26,7 @@ flowchart
 ---
 
 ```mermaid
-flowchart
+flowchart LR
     yellow:::yellow
     gold:::gold
     orange:::orange
