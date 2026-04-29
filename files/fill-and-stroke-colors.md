@@ -56,14 +56,18 @@ subgraph d
     brown:::brown
     chocolate:::chocolate
     redBrown:::redBrown
+    gray:::gray
+    black:::black
 end
 a -.- b -.- c -.- d
 %% Styles
-    classDef brown stroke:saddlebrown,stroke-width:10px
+    classDef black stroke:black,stroke-width:10px
     classDef blue stroke:blue,stroke-width:10px
+    classDef brown stroke:saddlebrown,stroke-width:10px
     classDef chocolate stroke:chocolate,stroke-width:10px
     classDef cyan stroke:cyan,stroke-width:10px
     classDef gold stroke:gold,stroke-width:10px
+    classDef gray stroke:gray,stroke-width:10px
     classDef green stroke:green,stroke-width:10px
     classDef lime stroke:lime,stroke-width:10px
     classDef magenta stroke:magenta,stroke-width:10px
