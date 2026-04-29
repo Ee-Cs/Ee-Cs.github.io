@@ -53,6 +53,7 @@ subgraph d
     chocolate:::chocolate
     redBrown:::redBrown
 end
+a -.- b -.- c -.- d
 %% Styles
     classDef brown stroke:saddlebrown,stroke-width:10px
     classDef blue stroke:blue,stroke-width:10px
