@@ -27,27 +27,31 @@ graph LR
 
 ```mermaid
 flowchart LR
-subgraph A
-%%    direction LR
+subgraph a
     yellow:::yellow
     gold:::gold
     orange:::orange
     orangeDark:::orangeDark
+end
+subgraph b
     salmon:::salmon
     pink:::pink
     red:::red
     magenta:::magenta
-    violet:::violet
 end
-subgraph B
-%%    direction LR
+subgraph c
+    violet:::violet
     blue:::blue
     cyan:::cyan
     lime:::lime
+end
+subgraph d
     green:::green
     olive:::olive
     sienna:::sienna
     brown:::brown
+end
+subgraph e
     chocolate:::chocolate
     redBrown:::redBrown
 end
