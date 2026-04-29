@@ -1,7 +1,7 @@
 # Fill and Stroke Colors
 
 ```mermaid
-graph
+graph LR
     lightgray:::lightgray
     lavender:::lavender
     aliceblue:::aliceblue
