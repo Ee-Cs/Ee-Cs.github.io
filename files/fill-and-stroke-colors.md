@@ -75,7 +75,7 @@ classDiagram
     classDef redBrown stroke:brown,stroke-width:10px
     classDef salmon stroke:salmon,stroke-width:10px
     classDef sienna stroke:sienna,stroke-width:10px
-    classDef violet stroke:"#7F00FF",stroke-width:10px
+    classDef violet stroke:#7F00FF,stroke-width:10px
     classDef yellow stroke:yellow,stroke-width:10px
 ```
 
