@@ -1,7 +1,6 @@
 # Fill and Stroke Colors
 
 ```mermaid
-flowchart LR
     lightgray:::lightgray
     lavender:::lavender
     aliceblue:::aliceblue
@@ -26,31 +25,25 @@ flowchart LR
 ---
 
 ```mermaid
----
-  config:
-    class:
-      hideEmptyMembersBox: true
----
-classDiagram
-    direction LR
-    class yellow:::yellow { }
-    class gold:::gold { }
-    class orange:::orange { }
-    class orangeDark:::orangeDark { }
-    class salmon:::salmon { }
-    class pink:::pink { }
-    class red:::red { }
-    class magenta:::magenta { }
-    class violet:::violet { }
-    class blue:::blue { }
-    class cyan:::cyan { }
-    class lime:::lime { }
-    class green:::green { }
-    class olive:::olive { }
-    class sienna:::sienna { }
-    class brown:::brown { }
-    class chocolate:::chocolate { }
-    class redBrown:::redBrown { }
+flowchart LR
+    yellow:::yellow
+    gold:::gold
+    orange:::orange
+    orangeDark:::orangeDark
+    salmon:::salmon
+    pink:::pink
+    red:::red
+    magenta:::magenta
+    violet:::violet
+    blue:::blue
+    cyan:::cyan
+    lime:::lime
+    green:::green
+    olive:::olive
+    sienna:::sienna
+    brown:::brown
+    chocolate:::chocolate
+    redBrown:::redBrown
 %% Styles
     classDef brown stroke:saddlebrown,stroke-width:10px
     classDef blue stroke:blue,stroke-width:10px
