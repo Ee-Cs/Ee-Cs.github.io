@@ -1,16 +1,26 @@
 # Fill and Stroke Colors
 
 ```mermaid
-graph LR
+flowchart TB
+subgraph a
+    direction TB
     lightgray:::lightgray
     lavender:::lavender
     aliceblue:::aliceblue
+end
+subgraph b
+    direction TB
     lightcyan:::lightcyan
     honeydew:::honeydew
     lightyellow:::lightyellow
+end
+subgraph c
+    direction TB
     cornsilk:::cornsilk
     bisque:::bisque
     mistyrose:::mistyrose
+end
+a -.- b -.- c
 %% Styles
     classDef aliceblue fill:aliceblue,stroke:black,stroke-width:1px
     classDef bisque fill:bisque,stroke:black,stroke-width:1px
