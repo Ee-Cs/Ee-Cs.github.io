@@ -46,7 +46,6 @@ classDiagram
     class pink:::pink { }
     class red:::red { }
     class magenta:::magenta { }
-    class blueviolet:::blueviolet { }
     class violet:::violet { }
     class blue:::blue { }
     class cyan:::cyan { }
@@ -60,7 +59,6 @@ classDiagram
 %% Styles
     classDef brown stroke:saddlebrown,stroke-width:10px
     classDef blue stroke:blue,stroke-width:10px
-    classDef blueviolet stroke:blueviolet,stroke-width:10px
     classDef chocolate stroke:chocolate,stroke-width:10px
     classDef cyan stroke:cyan,stroke-width:10px
     classDef gold stroke:gold,stroke-width:10px
