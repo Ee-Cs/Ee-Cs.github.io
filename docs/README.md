@@ -37,9 +37,10 @@
 
 | |
 | --- |
+| [**emojis.md**](../files/emojis.md) |
+| [**fill-and-stroke-colors.md**](../files/fill-and-stroke-colors.md) |
 | [**headings.md**](../files/headings.md) |
 | [**lists-and-tables.md**](../files/lists-and-tables.md) |
-| [**emojis.md**](../files/emojis.md) |
 | [**fenced-code-blocks.md**](../files/fenced-code-blocks.md) |
 | [**flowchart-diagrams.md**](../files/flowchart-diagrams.md) |
 | [**sequence-diagrams.md**](../files/sequence-diagrams.md) |

@@ -1,0 +1,82 @@
+# Fill and Stroke Colors
+
+```mermaid
+---
+  config:
+    class:
+      hideEmptyMembersBox: true
+---
+classDiagram
+    direction LR
+    class lightgray:::lightgray { }
+    class lavender:::lavender { }
+    class aliceblue:::aliceblue { }
+    class lightcyan:::lightcyan { }
+    class honeydew:::honeydew { }
+    class lightyellow:::lightyellow { }
+    class cornsilk:::cornsilk { }
+    class bisque:::bisque { }
+    class mistyrose:::mistyrose { }
+%% Styles
+    classDef aliceblue fill:aliceblue,stroke:black,stroke-width:1px
+    classDef bisque fill:bisque,stroke:black,stroke-width:1px
+    classDef cornsilk fill:cornsilk,stroke:black,stroke-width:1px
+    classDef honeydew fill:honeydew,stroke:black,stroke-width:1px
+    classDef lavender fill:lavender,stroke:black,stroke-width:1px
+    classDef lightcyan fill:lightcyan,stroke:black,stroke-width:1px
+    classDef lightgray fill:lightgray,stroke:black,stroke-width:1px
+    classDef lightyellow fill:lightyellow,stroke:black,stroke-width:1px
+    classDef mistyrose fill:mistyrose,stroke:black,stroke-width:1px
+```
+---
+
+```mermaid
+---
+  config:
+    class:
+      hideEmptyMembersBox: true
+---
+classDiagram
+    direction LR
+    class yellow:::yellow { }
+    class gold:::gold { }
+    class orange:::orange { }
+    class orangeDark:::orangeDark { }
+    class salmon:::salmon { }
+    class pink:::pink { }
+    class red:::red { }
+    class magenta:::magenta { }
+    class blueviolet:::blueviolet { }
+    class violet:::violet { }
+    class blue:::blue { }
+    class cyan:::cyan { }
+    class lime:::lime { }
+    class green:::green { }
+    class olive:::olive { }
+    class sienna:::sienna { }
+    class brown:::brown { }
+    class chocolate:::chocolate { }
+    class redBrown:::redBrown { }
+%% Styles
+    classDef brown stroke:saddlebrown,stroke-width:10px
+    classDef blue stroke:blue,stroke-width:10px
+    classDef blueviolet stroke:blueviolet,stroke-width:10px
+    classDef chocolate stroke:chocolate,stroke-width:10px
+    classDef cyan stroke:cyan,stroke-width:10px
+    classDef gold stroke:gold,stroke-width:10px
+    classDef green stroke:green,stroke-width:10px
+    classDef lime stroke:lime,stroke-width:10px
+    classDef magenta stroke:magenta,stroke-width:10px
+    classDef olive stroke:olive,stroke-width:10px
+    classDef orange stroke:orange,stroke-width:10px
+    classDef orangeDark stroke:#FF5C00,stroke-width:10px
+    classDef pink stroke:pink,stroke-width:10px
+    classDef red stroke:red,stroke-width:10px
+    classDef redBrown stroke:brown,stroke-width:10px
+    classDef salmon stroke:salmon,stroke-width:10px
+    classDef sienna stroke:sienna,stroke-width:10px
+    classDef violet stroke:"#7F00FF",stroke-width:10px
+    classDef yellow stroke:yellow,stroke-width:10px
+```
+
+---
