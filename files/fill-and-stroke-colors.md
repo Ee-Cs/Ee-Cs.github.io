@@ -39,35 +39,35 @@ a -.- b -.- c
 flowchart TB
 subgraph a
     direction TB
+    gray:::gray
+    black:::black
     yellow:::yellow
     gold:::gold
     orange:::orange
-    orangeDark:::orangeDark
-    salmon:::salmon
 end
 subgraph b
     direction TB
+    orangeDark:::orangeDark
+    salmon:::salmon
     pink:::pink
     red:::red
     magenta:::magenta
-    violet:::violet
-    blue:::blue
 end
 subgraph c
     direction TB
+    violet:::violet
+    blue:::blue
     cyan:::cyan
     lime:::lime
     green:::green
-    olive:::olive
-    sienna:::sienna
 end
 subgraph d
     direction TB
+    olive:::olive
+    sienna:::sienna
     brown:::brown
     chocolate:::chocolate
     redBrown:::redBrown
-    gray:::gray
-    black:::black
 end
 a -.- b -.- c -.- d
 %% Styles
