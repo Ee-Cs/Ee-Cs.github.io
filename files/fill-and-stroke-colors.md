@@ -27,6 +27,7 @@ graph LR
 
 ```mermaid
 flowchart LR
+subgraph
     yellow:::yellow
     gold:::gold
     orange:::orange
@@ -36,6 +37,8 @@ flowchart LR
     red:::red
     magenta:::magenta
     violet:::violet
+end
+subgraph
     blue:::blue
     cyan:::cyan
     lime:::lime
@@ -45,6 +48,7 @@ flowchart LR
     brown:::brown
     chocolate:::chocolate
     redBrown:::redBrown
+end
 %% Styles
     classDef brown stroke:saddlebrown,stroke-width:10px
     classDef blue stroke:blue,stroke-width:10px
