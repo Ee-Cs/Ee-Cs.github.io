@@ -1,6 +1,7 @@
 # Fill and Stroke Colors
 
-```mermaid flowchart
+```mermaid
+flowchart
     lightgray:::lightgray
     lavender:::lavender
     aliceblue:::aliceblue
