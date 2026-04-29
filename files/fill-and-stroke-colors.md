@@ -26,9 +26,9 @@ graph LR
 ---
 
 ```mermaid
-flowchart LR
+flowchart TB
 subgraph A
-    direction TD
+    direction TB
     yellow:::yellow
     gold:::gold
     orange:::orange
@@ -40,7 +40,7 @@ subgraph A
     violet:::violet
 end
 subgraph B
-    direction TD
+    direction TB
     blue:::blue
     cyan:::cyan
     lime:::lime
