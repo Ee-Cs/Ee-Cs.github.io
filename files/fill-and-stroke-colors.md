@@ -97,35 +97,64 @@ a -.- b -.- c -.- d
 
 ```mermaid
 flowchart TB
-subgraph a
+subgraph 1st
     direction TB
     1((1st)):::one
     2((2nd)):::two
     3((3th)):::three
-end
-subgraph b
-    direction TB
     4((4th)):::four
     5((5th)):::five
     6((6th)):::six
 end
-subgraph c
+subgraph 2nd
     direction TB
-    7((7th)):::seven
-    8((8th)):::eight
-    9((9th)):::nine
+    rL((RRR)):::redLight
+    gL((GGG)):::greenLight
+    bL((BBB)):::blueLight
+    cL((CCC)):::cyanLight
+    mL((MMM)):::magentaLight
+    yL((YYY)):::yellowLight
 end
-a -.- b -.- c
+subgraph 3rd
+    direction TB
+    rF((RRR)):::red
+    gF((GGG)):::green
+    bF((BBB)):::blue
+    cF((CCC)):::cyan
+    mF((MMM)):::magenta
+    yF((YYY)):::yellow
+end
+subgraph 4th
+    direction TB
+    success((Success)):::success
+    info((Info___)):::info
+    warning((Warning)):::warning
+    error((Error__)):::error
+end
+1st -.- 2nd -.- 3rd -.- 4th
 %% Styles
-    classDef one fill:#F4E1E4,stroke:#000000,stroke-width:1px
-    classDef two fill:#FFCB33,stroke:#000000,stroke-width:1px
-    classDef three fill:#FCDAD7,stroke:#000000,stroke-width:1px
-    classDef four fill:#C3F7F7,stroke:#000000,stroke-width:1px
-    classDef five fill:#8FB7DC,stroke:#000000,stroke-width:1px
-    classDef six fill:#B69592,stroke:#000000,stroke-width:1px
-    classDef seven fill:#FF8888,stroke:#000000,stroke-width:1px
-    classDef eight fill:#88FF88,stroke:#000000,stroke-width:1px
-    classDef nine fill:#8888FF,stroke:#000000,stroke-width:1px
+    classDef one fill:#F4E1E4
+    classDef two fill:#FFCB33
+    classDef three fill:#FCDAD7
+    classDef four fill:#C3F7F7
+    classDef five fill:#8FB7DC
+    classDef six fill:#B69592
+    classDef redLight fill:#FF8888
+    classDef greenLight fill:#88FF88
+    classDef blueLight fill:#8888FF
+    classDef cyanLight fill:#88FFFF
+    classDef magentaLight fill:#FF88FF
+    classDef yellowLight fill:#FFFF88
+    classDef red fill:red
+    classDef green fill:green
+    classDef blue fill:blue
+    classDef cyan fill:cyan
+    classDef magenta fill:magenta
+    classDef yellow fill:yellow
+    classDef success fill:#5CB85C
+    classDef info fill:#5BC0DE
+    classDef warning fill:#F0AD4E
+    classDef error fill:#D9534F
 ```
 
 ---
